@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group. -->
+<!-- For more information about CERIF and euroCRIS see http://www.eurocris.org/ . -->
+<!-- This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 Unported License ( http://creativecommons.org/licenses/by-nd/4.0/ ). -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:org:eurocris:cerif-xxx" targetNamespace="urn:xmlns:org:eurocris:cerif-xxx" elementFormDefault="qualified">
+
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd" />
+
+	<xs:element name="Publication">
+		<xs:annotation>
+			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Result Publication</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="IdentifiedThing__Type">
+					<xs:sequence>
+
+						<xs:element name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">
+									cfResPublTitle.cfTitle<!-- name of the entity and attribute -->
+								</xs:appinfo>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Subtitle" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPublSubtitle.cfSubtitle</xs:appinfo>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Type" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:appinfo source="http://eurocris.org/cerif/annotations/Classification#Type"><!-- any class scheme of the 'type' character -->
+								</xs:appinfo>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:simpleContent>
+									<xs:extension base="xs:string">
+										<xs:attribute name="scheme" type="xs:anyURI" use="required" />
+									</xs:extension>
+								</xs:simpleContent>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element name="PublishedIn" minOccurs="0">
+							<xs:annotation>
+								<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_PublChannel(Publication Channel Links#PublishedIn)</xs:appinfo>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element ref="PublishingChannel">
+										<xs:annotation>
+											<xs:appinfo source="http://eurocris.org/cerif/annotations/Expandable">Publishing Channel Types</xs:appinfo>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element name="Authors" minOccurs="0">
+							<xs:annotation>
+								<xs:appinfo source="http://eurocris.org/cerif/annotations/OrderedContainer"></xs:appinfo>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Author" minOccurs="0" maxOccurs="unbounded">
+										<xs:annotation>
+											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_Pers(Person Output Contributions#Author)</xs:appinfo>
+											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_OrgUnit(Organisation Output Contributions#Author)</xs:appinfo>
+										</xs:annotation>
+										<xs:complexType>
+											<xs:sequence>
+												<xs:element name="DisplayName" type="xs:string" minOccurs="0" />
+												<xs:choice>
+													<xs:sequence>
+														<xs:element ref="Person" />
+														<xs:element name="Affiliation" minOccurs="0" maxOccurs="unbounded">
+															<!-- ... -->
+														</xs:element>
+													</xs:sequence>
+													<xs:element ref="OrgUnit" />
+												</xs:choice>
+											</xs:sequence>
+										</xs:complexType>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<!-- ... -->
+
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Person">
+		<xs:annotation>
+			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Person</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<!-- ... -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="OrgUnit">
+		<xs:annotation>
+			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Organisation Unit</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<!-- ... -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="PublishingChannel">
+		<xs:annotation>
+			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Publishing Channel</xs:appinfo>
+		</xs:annotation>
+		<xs:complexType>
+			<!-- ... -->
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="IdentifiedThing__Type">
+		<xs:sequence />
+		<xs:attribute name="id" type="cfId__Type" />
+		<xs:anyAttribute namespace="##other" />
+	</xs:complexType>
+
+	<xs:simpleType name="cfId__Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="128" />
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="cfMLangString__Type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="xml:lang" use="required" />
+				<xs:attribute name="trans" type="cfTrans__Type" use="optional" default="o" />
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="cfTrans__Type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="o">
+				<xs:annotation>
+					<xs:documentation>Value in the original language</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="h">
+				<xs:annotation>
+					<xs:documentation>Human-translated value</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="m">
+				<xs:annotation>
+					<xs:documentation>Machine-translated value</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>
