@@ -2,7 +2,7 @@
 <!-- This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group. -->
 <!-- For more information about CERIF and euroCRIS see http://www.eurocris.org/ . -->
 <!-- This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 Unported License ( http://creativecommons.org/licenses/by-nd/4.0/ ). -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:org:eurocris:cerif-xxx" targetNamespace="urn:xmlns:org:eurocris:cerif-xxx" elementFormDefault="qualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:org:eurocris:cerif-xxx" targetNamespace="urn:xmlns:org:eurocris:cerif-xxx" elementFormDefault="qualified" version="1.1">
 
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd" />
 
@@ -73,12 +73,7 @@
 											<xs:sequence>
 												<xs:element name="DisplayName" type="xs:string" minOccurs="0" />
 												<xs:choice>
-													<xs:sequence>
-														<xs:element ref="Person" />
-														<xs:element name="Affiliation" minOccurs="0" maxOccurs="unbounded">
-															<!-- ... -->
-														</xs:element>
-													</xs:sequence>
+													<xs:group ref="PersonWithAffiliations__Group"/>
 													<xs:element ref="OrgUnit" />
 												</xs:choice>
 											</xs:sequence>
@@ -163,5 +158,21 @@
 			</xs:enumeration>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<xs:group name="PersonWithAffiliations__Group">
+		<xs:sequence>
+			<xs:element ref="Person" />
+			<xs:element name="Affiliation" minOccurs="0" maxOccurs="unbounded" />
+		</xs:sequence>
+	</xs:group>
+
+	<xs:element name="Affiliation">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="DisplayName" type="xs:string" minOccurs="0" />
+				<xs:element ref="OrgUnit" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
 
 </xs:schema>
