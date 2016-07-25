@@ -2,122 +2,68 @@
 <!-- This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group. -->
 <!-- For more information about CERIF and euroCRIS see http://www.eurocris.org/ . -->
 <!-- This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 Unported License ( http://creativecommons.org/licenses/by-nd/4.0/ ). -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:org:eurocris:cerif-xxx" targetNamespace="urn:xmlns:org:eurocris:cerif-xxx" elementFormDefault="qualified" version="1.1">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.1" xmlns:cflink="http://eurocris.org/cerif/annotations" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing-1.0"
+	elementFormDefault="qualified" attributeFormDefault="unqualified">
 
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd" />
 
-	<xs:element name="Publication">
-		<xs:annotation>
-			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Result Publication</xs:appinfo>
-		</xs:annotation>
+	<xs:element name="Publication" cflink:entity="cfResPubl"><!-- link to the CERIF data model entity -->
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="IdentifiedThing__Type">
 					<xs:sequence>
 
-						<xs:element name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPublTitle.cfTitle</xs:appinfo><!-- name of the entity and attribute -->
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublTitle.cfTitle" /><!-- link to the (multilingual) attribute -->
 
-						<xs:element name="Subtitle" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPublSubtitle.cfSubtitle</xs:appinfo>
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Subtitle" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublSubtitle.cfSubtitle" />
 
-						<xs:element name="Type" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Expandable">Classification(Type)</xs:appinfo><!-- any class scheme of the 'type' character -->
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Type" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Type)" /><!-- any class 
+							scheme of the 'type' character -->
 
-						<xs:element name="PublishedIn" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_PublChannel(Publication Channel Links#PublishedIn)</xs:appinfo><!-- a binary link to the Publishing Channel entity -->
-							</xs:annotation>
+						<xs:element name="PublishedIn" minOccurs="0" cflink:link="cfResPubl_PublChannel(Publication Channel Links#PublishedIn)"><!-- a binary link to the Publishing Channel entity -->
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLink__BaseType">
 										<xs:sequence>
-											<xs:element ref="PublishingChannel">
-												<xs:annotation>
-													<xs:appinfo source="http://eurocris.org/cerif/annotations/Expandable">Publishing Channel Types</xs:appinfo>
-												</xs:annotation>
-											</xs:element>
+											<xs:element ref="PublishingChannel" cfprocess:expandBy="Publishing Channel Types" />
 										</xs:sequence>
 									</xs:extension>
 								</xs:complexContent>
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Volume" type="xs:string" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPubl.cfVol</xs:appinfo>
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Volume" type="xs:string" minOccurs="0" cflink:attribute="cfResPubl.cfVol" />
 
-						<xs:element name="Identifier" type="cfIdentifier__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Expandable">(Identifier Types)</xs:appinfo><!-- any identifier from the Identifier Types class scheme that is applicable to the cfResPubl entity -->
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Identifier" type="cfIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="Identifier Types" />
 
-						<xs:element name="Authors" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/OrderedContainer"></xs:appinfo>
-							</xs:annotation>
+						<xs:element name="Authors" minOccurs="0" cflink:orderedContainer="true">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Author" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded">
-										<xs:annotation>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_Pers(Person Output Contributions#Author)</xs:appinfo>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_OrgUnit(Organisation Output Contributions#Author)</xs:appinfo>
-										</xs:annotation>
-									</xs:element>
+									<xs:element name="Author" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded"
+										cflink:link="cfResPubl_Pers(Person Output Contributions#Author) cfResPubl_OrgUnit(Organisation Output Contributions#Author)" />
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Editors" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/OrderedContainer"></xs:appinfo>
-							</xs:annotation>
+						<xs:element name="Editors" minOccurs="0" cflink:orderedContainer="true">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Editor" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded">
-										<xs:annotation>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_Pers(Person Output Contributions#Editor)</xs:appinfo>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_OrgUnit(Organisation Output Contributions#Editor)</xs:appinfo>
-										</xs:annotation>
-									</xs:element>
+									<xs:element name="Editor" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Pers(Person Output Contributions#Editor) cfResPubl_OrgUnit(Organisation Output Contributions#Editor)"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Publishers" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/OrderedContainer"></xs:appinfo>
-							</xs:annotation>
+						<xs:element name="Publishers" minOccurs="0" cflink:orderedContainer="true">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Publisher" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded">
-										<xs:annotation>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_Pers(Person Output Contributions#Publisher)</xs:appinfo>
-											<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_OrgUnit(Organisation Output Contributions#Publisher)</xs:appinfo>
-										</xs:annotation>
-									</xs:element>
+									<xs:element name="Publisher" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
 
 						<!-- ... -->
 
-						<xs:element name="PartOf" minOccurs="0">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/BinaryLink">cfResPubl_ResPubl(Inter-­Publication Relations#Part):1</xs:appinfo>
-							</xs:annotation>
+						<xs:element name="PartOf" minOccurs="0" cflink:link="cfResPubl_ResPubl(Inter-­Publication Relations#Part):1">
 							<xs:complexType>
 								<xs:complexContent>
 									<xs:extension base="cfLinkWithDisplayName__BaseType">
@@ -129,30 +75,15 @@
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Subject" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Expandable">Classification(Subject)</xs:appinfo><!-- any class scheme of the 'subject' character -->
-							</xs:annotation>
-							<xs:complexType>
-								<xs:simpleContent>
-									<xs:extension base="xs:string">
-										<xs:attribute name="scheme" type="xs:anyURI" use="required" />
-									</xs:extension>
-								</xs:simpleContent>
-							</xs:complexType>
-						</xs:element>
+						<xs:element name="Subject" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Subject)" /><!-- any class 
+							scheme of the 'subject' character -->
 
-						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPublKeyw.cfKeyw</xs:appinfo>
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublKeyw.cfKeyw"/>
 
-						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded">
-							<xs:annotation>
-								<xs:appinfo source="http://eurocris.org/cerif/annotations/Attribute">cfResPublAbstr.cfAbstr</xs:appinfo>
-							</xs:annotation>
-						</xs:element>
+						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublAbstr.cfAbstr"/>
+
+						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" /><!-- any class 
+							scheme of the 'subject' character -->
 
 					</xs:sequence>
 				</xs:extension>
@@ -160,28 +91,19 @@
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="Person">
-		<xs:annotation>
-			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Person</xs:appinfo>
-		</xs:annotation>
+	<xs:element name="Person" cflink:entity="Person">
 		<xs:complexType>
 			<!-- ... -->
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="OrgUnit">
-		<xs:annotation>
-			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Organisation Unit</xs:appinfo>
-		</xs:annotation>
+	<xs:element name="OrgUnit" cflink:entity="Organisation Unit">
 		<xs:complexType>
 			<!-- ... -->
 		</xs:complexType>
 	</xs:element>
 
-	<xs:element name="PublishingChannel">
-		<xs:annotation>
-			<xs:appinfo source="http://eurocris.org/cerif/annotations/Entity">Publishing Channel</xs:appinfo>
-		</xs:annotation>
+	<xs:element name="PublishingChannel" cflink:entity="Publishing Channel">
 		<xs:complexType>
 			<!-- ... -->
 		</xs:complexType>
