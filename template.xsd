@@ -2,8 +2,8 @@
 <!-- This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group. -->
 <!-- For more information about CERIF and euroCRIS see http://www.eurocris.org/ . -->
 <!-- This work is licensed under a Creative Commons Attribution-NoDerivs 4.0 Unported License ( http://creativecommons.org/licenses/by-nd/4.0/ ). -->
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.1" xmlns:cflink="http://eurocris.org/cerif/annotations" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing-1.0"
-	elementFormDefault="qualified" attributeFormDefault="unqualified">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" elementFormDefault="qualified"
+	attributeFormDefault="unqualified">
 
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="https://www.w3.org/2001/xml.xsd" />
 
@@ -48,7 +48,8 @@
 						<xs:element name="Editors" minOccurs="0" cflink:orderedContainer="true">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Editor" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Pers(Person Output Contributions#Editor) cfResPubl_OrgUnit(Organisation Output Contributions#Editor)"/>
+									<xs:element name="Editor" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded"
+										cflink:link="cfResPubl_Pers(Person Output Contributions#Editor) cfResPubl_OrgUnit(Organisation Output Contributions#Editor)" />
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
@@ -56,7 +57,7 @@
 						<xs:element name="Publishers" minOccurs="0" cflink:orderedContainer="true">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Publisher" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded"/>
+									<xs:element name="Publisher" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" />
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
@@ -75,15 +76,15 @@
 							</xs:complexType>
 						</xs:element>
 
-						<xs:element name="Subject" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Subject)" /><!-- any class 
-							scheme of the 'subject' character -->
+						<xs:element name="Subject" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Subject)" /><!-- any 
+							class scheme of the 'subject' character -->
 
-						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublKeyw.cfKeyw"/>
+						<xs:element name="Keywords" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublKeyw.cfKeyw" />
 
-						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublAbstr.cfAbstr"/>
+						<xs:element name="Abstract" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfResPublAbstr.cfAbstr" />
 
-						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" /><!-- any class 
-							scheme of the 'subject' character -->
+						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" /><!-- any 
+							class scheme of the 'subject' character -->
 
 					</xs:sequence>
 				</xs:extension>
