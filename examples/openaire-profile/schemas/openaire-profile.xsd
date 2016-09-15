@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:eu:openaire:cris-mgr-guidelines-1.1-EXPERIMENTAL" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:xmlns:eu:openaire:cris-mgr-guidelines-1.1-EXPERIMENTAL">
+
+	<xs:annotation>
+		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.
+			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
+			For more information about CERIF and euroCRIS see http://www.eurocris.org/.
+		</xs:documentation>
+	</xs:annotation>
+
+	<!-- Imports -->
+	<xs:import namespace="http://openaire.eu/cerif/vocab/OutputTypes#" schemaLocation="../CERIF-Labs/semantics/OutputTypes.xsd"/>
+	<xs:import namespace="http://openaire.eu/cerif/vocab/LicenseTypes#" schemaLocation="../CERIF-Labs/semantics/LicenseTypes.xsd"/>
+	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
+
+	<xs:element cflink:entity="cfResPubl" name="Publication">
+		<!-- link to the CERIF data model entity -->
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+
+						<!-- link to the (multilingual) attribute -->
+						<xs:element cflink:attribute="cfResPublTitle.cfTitle" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type"/>
+
+						<xs:element cflink:attribute="cfResPublSubtitle.cfSubtitle" maxOccurs="unbounded" minOccurs="0" name="Subtitle" type="cfMLangString__Type"/>
+
+						<!-- any class scheme of the 'type' character -->
+						<xs:element xmlns="http://openaire.eu/cerif/vocab/OutputTypes#" cflink:link="cfResPubl_Class" maxOccurs="unbounded" minOccurs="0" ref="Type"/>
+
+						<!-- a binary link to the Publishing Channel entity -->
+						<xs:element cflink:link="cfResPubl_PublChannel(http://eurocris.org/cerif/vocab/PublicationChannelLinks#PublishedIn)" minOccurs="0" name="PublishedIn">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element cfprocess:expandBy="http://eurocris.org/cerif/vocab/PublishingChannelTypes#" ref="PublishingChannel"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element cflink:link="cfResPubl_ResPubl(http://eurocris.org/cerif/vocab/Inter-­PublicationRelations#Part):1" minOccurs="0" name="PartOf">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLinkWithDisplayName__BaseType">
+										<xs:sequence>
+											<xs:element ref="Publication"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element cflink:attribute="cfResPubl.cfResPublDate" minOccurs="0" name="PublicationDate" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfNum" minOccurs="0" name="Number" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfVol" minOccurs="0" name="Volume" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfIssue" minOccurs="0" name="Issue" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfEdition" minOccurs="0" name="Edition" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfSeries" minOccurs="0" name="Series" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfStartPage" minOccurs="0" name="StartPage" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfEndPage" minOccurs="0" name="EndPage" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfResPubl.cfTotalPages" minOccurs="0" name="TotalPages" type="xs:integer"/>
+
+						<xs:element cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfIdentifier__Type"/>
+
+						<xs:element cflink:orderedContainer="true" minOccurs="0" name="Authors">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="cfResPubl_Pers(http://eurocris.org/cerif/vocab/PersonOutputContributions#Author) cfResPubl_OrgUnit(http://eurocris.org/cerif/vocab/OrganisationOutputContributions#Author)" maxOccurs="unbounded" minOccurs="0" name="Author" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element cflink:orderedContainer="true" minOccurs="0" name="Editors">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="cfResPubl_Pers(http://eurocris.org/cerif/vocab/PersonOutputContributions#Editor) cfResPubl_OrgUnit(http://eurocris.org/cerif/vocab/OrganisationOutputContributions#Editor)" maxOccurs="unbounded" minOccurs="0" name="Editor" type="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element cflink:orderedContainer="true" minOccurs="0" name="Publishers">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="cfResPubl_Pers(http://eurocris.org/cerif/vocab/PersonOutputContributions#Publisher) cfResPubl_OrgUnit(http://eurocris.org/cerif/vocab/OrganisationOutputContributions#Publisher)" maxOccurs="unbounded" minOccurs="0" name="Publisher" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:element xmlns="http://openaire.eu/cerif/vocab/LicenseTypes#" cflink:link="cfResPubl_Class" maxOccurs="unbounded" minOccurs="0" ref="License"/>
+<!-- any 
+							class scheme of the 'license' character -->
+
+						<xs:element cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Subject)" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type"/>
+<!-- any 
+							class scheme of the 'subject' character -->
+
+						<xs:element cflink:attribute="cfResPublKeyw.cfKeyw" maxOccurs="unbounded" minOccurs="0" name="Keyword" type="cfMLangString__Type"/>
+
+						<xs:element cflink:attribute="cfResPublAbstr.cfAbstr" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>
+
+						<xs:element cflink:link="cfResPubl_Class" cfprocess:expandBy="Classification(Status)" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericClassification__Type"/>
+<!-- any 
+							class scheme of the 'subject' character -->
+
+						<xs:element cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="Originator">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="Project"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element cflink:entity="cfPers" name="Person">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+
+						<xs:element cflink:entity="cfPersName" minOccurs="0" name="PersonName" type="cfPersName__Type"/>
+
+						<xs:element cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfIdentifier__Type"/>
+
+						<xs:element cflink:entity="cfEAddr" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI"/>
+
+						<!-- ... -->
+
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="cfPersName__Type">
+		<xs:complexContent>
+			<xs:extension base="cfIdAttr__BaseType">
+				<xs:sequence>
+
+					<xs:element cflink:attribute="cfPersName.cfFamilyNames" minOccurs="0" name="FamilyNames" type="xs:string"/>
+
+					<xs:element cflink:attribute="cfPersName.cfFirstNames" minOccurs="0" name="FirstNames" type="xs:string"/>
+
+					<xs:element cflink:attribute="cfPersName.cfOtherNames" minOccurs="0" name="OtherNames" type="xs:string"/>
+
+					<xs:element cflink:link="cfPersName_Class" cfprocess:expandBy="Classification(Type)" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type"/>
+
+					<xs:group ref="__TheRestGroup"/>
+						
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element cflink:entity="cfOrgUnit" name="OrgUnit">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+
+						<xs:element cflink:attribute="cfOrgUnit.cfAcro" minOccurs="0" name="Acronym" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfOrgUnitName.cfName" maxOccurs="unbounded" minOccurs="0" name="Name" type="cfMLangString__Type"/>
+						
+						<!-- ... -->
+
+						<xs:element cflink:entity="cfEAddr" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI"/>
+
+						<!-- ... -->
+
+						<xs:element cflink:link="cfOrgUnit_OrgUnit(http://eurocris.org/cerif/vocab/Inter-­OrganisationRelations#Part):1" minOccurs="0" name="PartOf">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLinkWithDisplayName__BaseType">
+										<xs:sequence>
+											<xs:element ref="OrgUnit"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+
+						<!-- ... -->
+
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element cflink:entity="Publishing Channel" name="PublishingChannel">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+
+						<xs:element cflink:attribute="cfPublChanTitle.cfTitle" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type"/>
+
+						<xs:element cflink:link="cfPublChan_Class" cfprocess:expandBy="Classification(Type)" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type"/>
+
+						<xs:element cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfIdentifier__Type"/>
+
+						<xs:element cflink:orderedContainer="true" minOccurs="0" name="Publishers">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="cfPublChan_Pers(http://eurocris.org/cerif/vocab/PersonOutputContributions#Publisher) cfPublChan_OrgUnit(http://eurocris.org/cerif/vocab/OrganisationOutputContributions#Publisher)" maxOccurs="unbounded" minOccurs="0" name="Publisher" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+	
+	<xs:element cflink:entity="Project" name="Project">
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+						
+						<xs:element cflink:attribute="cfProj.cfAcro" minOccurs="0" name="Acronym" type="xs:string"/>
+
+						<xs:element cflink:attribute="cfProjTitle.cfTitle" maxOccurs="unbounded" minOccurs="0" name="Title" type="cfMLangString__Type"/>
+
+						<xs:element cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Type)" maxOccurs="unbounded" minOccurs="0" name="Type" type="cfGenericClassification__Type"/>
+
+						<xs:element cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfIdentifier__Type"/>
+						
+						<xs:element cflink:attribute="cfProj.cfStartDate" minOccurs="0" name="StartDate" type="xs:date"/>
+						
+						<xs:element cflink:attribute="cfProj.cfEndDate" minOccurs="0" name="EndDate" type="xs:date"/>
+											
+						<xs:element minOccurs="0" name="Funders">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="" maxOccurs="unbounded" minOccurs="0" name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element minOccurs="0" name="Consortium">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element maxOccurs="unbounded" minOccurs="0" name="Member" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element minOccurs="0" name="Team">
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="PrincipalInvestigator" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Subject)" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type"/>
+<!-- any 
+							class scheme of the 'subject' character -->
+
+						<xs:element cflink:attribute="cfProjKeyw.cfKeyw" maxOccurs="unbounded" minOccurs="0" name="Keyword" type="cfMLangString__Type"/>
+
+						<xs:element cflink:attribute="cfProjAbstr.cfAbstr" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>
+
+						<xs:element cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Status)" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericClassification__Type"/>
+<!-- any 
+							class scheme of the 'subject' character -->
+
+						<xs:element cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)" maxOccurs="unbounded" minOccurs="0" name="Originator">
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="Publication"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="cfIdAttr__BaseType">
+		<xs:sequence/>
+		<xs:attribute name="id" type="cfId__Type"/>
+		<xs:anyAttribute namespace="##other"/>
+	</xs:complexType>
+
+	<xs:simpleType name="cfId__Type">
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="128"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:complexType name="cfMLangString__Type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute ref="xml:lang" use="required"/>
+				<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:simpleType name="cfTrans__Type">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="o">
+				<xs:annotation>
+					<xs:documentation>Value in the original language</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="h">
+				<xs:annotation>
+					<xs:documentation>Human-translated value</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+			<xs:enumeration value="m">
+				<xs:annotation>
+					<xs:documentation>Machine-translated value</xs:documentation>
+				</xs:annotation>
+			</xs:enumeration>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:group name="PersonWithAffiliations__Group">
+		<xs:sequence>
+			<xs:element ref="Person"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Affiliation">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element minOccurs="0" name="DisplayName" type="xs:string"/>
+						<xs:element ref="OrgUnit"/>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:group>
+
+	<xs:group name="__TheRestGroup">
+		<xs:sequence>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Classification" type="cfGenericClassification__Type"/>
+			<xs:element maxOccurs="unbounded" minOccurs="0" name="Link" type="cfGenericLink__Type"/>
+		</xs:sequence>
+	</xs:group>
+
+
+	<xs:attributeGroup name="cfStartDateEndDate__AttributesGroup">
+		<xs:attribute name="cfStartDate" type="cfGenericDate__Type" use="optional"/>
+		<xs:attribute name="cfEndDate" type="cfGenericDate__Type" use="optional"/>
+	</xs:attributeGroup>
+
+	<xs:simpleType name="cfGenericDate__Type">
+		<xs:union memberTypes="xs:gYear xs:gYearMonth xs:date xs:dateTime"/>
+	</xs:simpleType>
+
+	<xs:complexType name="cfLink__BaseType">
+		<xs:attributeGroup ref="cfStartDateEndDate__AttributesGroup"/>
+	</xs:complexType>
+
+	<xs:complexType name="cfLink__SimpleType">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attributeGroup ref="cfStartDateEndDate__AttributesGroup"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfLinkWithDisplayName__BaseType">
+		<xs:complexContent>
+			<xs:extension base="cfLink__BaseType">
+				<xs:sequence>
+					<xs:element minOccurs="0" name="DisplayName" type="xs:string"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfLinkWithDisplayNameToPersonWithAffiliations__Type">
+		<xs:complexContent>
+			<xs:extension base="cfLinkWithDisplayName__BaseType">
+				<xs:sequence>
+					<xs:group ref="PersonWithAffiliations__Group"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfLinkWithDisplayNameToPersonWithAffiliationsOrOrgUnit__Type">
+		<xs:complexContent>
+			<xs:extension base="cfLinkWithDisplayName__BaseType">
+				<xs:choice>
+					<xs:group ref="PersonWithAffiliations__Group"/>
+					<xs:element ref="OrgUnit"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfLinkWithDisplayNameToPersonOrOrgUnit__Type">
+		<xs:complexContent>
+			<xs:extension base="cfLinkWithDisplayName__BaseType">
+				<xs:choice>
+					<xs:element ref="Person"/>
+					<xs:element ref="OrgUnit"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfGenericClassification__Type">
+		<xs:simpleContent>
+			<xs:extension base="cfLink__SimpleType">
+				<xs:attribute name="scheme" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfGenericLink__Type">
+		<xs:complexContent>
+			<xs:extension base="cfLink__BaseType">
+				<xs:choice>
+					<xs:element ref="Publication"/>
+					<xs:element ref="Person"/>
+					<xs:element ref="OrgUnit"/>
+					<xs:element ref="PublishingChannel"/>
+					<xs:element ref="Project"/>
+				</xs:choice>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:complexType name="cfIdentifier__Type">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="type" type="xs:anyURI" use="required"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+</xs:schema>
