@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- A fictitious project proposal based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1336115 -->
+<!-- A fictitious project proposal funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1336115 -->
 <FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
 	<Project id="13045b7f-ceb0-4a3f-a82d-82c19e1994e7">
 		<Title xml:lang="en">Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia</Title>
