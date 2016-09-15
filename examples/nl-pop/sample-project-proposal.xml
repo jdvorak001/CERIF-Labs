@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- A fictitious funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1329207 -->
+<ProjectProposal xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
+	<Project id="87d5710e-63ba-4adc-a9ea-6bf733855a0f">
+		<Title xml:lang="en">Modeling of ion beam-induced bending of nanostructures</Title>
+		<StartDate>2016-03-01</StartDate>
+		<EndDate>2016-11-30</EndDate>
+		<Funders>
+			<Funder>
+				<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+					<Acronym>NWO</Acronym>
+					<Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+					<Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+					<FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+				</OrgUnit>
+			</Funder>
+		</Funders>
+		<Consortium>
+			<Secretariat>
+				<OrgUnit id="c983cf36-00c3-4834-9ae2-b12eac5f0637">
+					<Name xml:lang="en">Zernike Institute for Advanced Materials</Name>
+					<PartOf>
+						<OrgUnit id="7bd475bf-c59e-467c-bfb9-66859840d129">
+							<Name xml:lang="en" trans="h">Faculty of Mathematics and Science</Name>
+							<Name xml:lang="nl">Faculteit der Wiskunde en Natuurwetenschappen</Name>
+							<PartOf>
+								<OrgUnit id="e5bf121d-3ce7-4bee-8890-f01fb4a3dc73">
+									<Acronym>RUG</Acronym>
+									<Name xml:lang="en" trans="h">University of Groningen</Name>
+									<Name xml:lang="nl">Rijksuniversiteit Groningen</Name>
+									<FundRefId>http://dx.doi.org/10.13039/501100001721</FundRefId>
+									<GridId>grid.4830.f</GridId>
+								</OrgUnit>
+							</PartOf>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</Secretariat>
+		</Consortium>
+		<Team>
+			<PrincipalInvestigator>
+				<Person id="a14c6680-effb-4a20-98b5-1259f751b1bb">
+					<PersonName>
+						<FamilyNames>Hosson</FamilyNames>
+						<FirstNames>J.Th.M.</FirstNames>
+						<OtherNames>de</OtherNames>
+					</PersonName>
+					<DAI>info:eu-repo/dai/nl/296099953</DAI>
+				</Person>
+				<Affiliation>
+					<OrgUnit id="c983cf36-00c3-4834-9ae2-b12eac5f0637" />
+				</Affiliation>
+			</PrincipalInvestigator>
+		</Team>
+		<Abstract xml:lang="en"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1359875 --></Abstract>
+		<Costs><!-- Note: fictitious amounts in a real structure -->
+			<Cost>
+				<Funding id="648624b3-5f0f-4c65-914a-bc1ec5af28e5">
+					<Amount currency="EUR">2</Amount>
+					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectTotalEligibleCosts</Type>
+					<Name xml:lang="en">Total eligible costs of the project "Modeling of ion beam-induced bending of nanostructures"</Name>
+				</Funding>
+			</Cost>
+			<Cost>
+				<Funding id="e24b497f-0748-4b6a-895d-52d33f73680a">
+					<Amount currency="EUR">1</Amount>
+					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectCostsCoveredByFunder</Type>
+					<Name xml:lang="en">The costs of the project "Modeling of ion beam-induced bending of nanostructures" covered by the funding from NWO</Name>
+					<CoveredBy>
+						<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+							<Acronym>NWO</Acronym>
+						</OrgUnit>
+					</CoveredBy>
+					<ApplicationWithin>
+						<Funding id="be79edd0-8abd-4862-80a6-0b1891df6da6">
+							<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">Call</Type>
+							<Name xml:lang="en">The 2015 NWO Call for Projects</Name>
+							<CoveredBy>
+								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+									<Acronym>NWO</Acronym>
+								</OrgUnit>
+							</CoveredBy>
+						</Funding>
+					</ApplicationWithin>
+				</Funding>
+			</Cost>
+			<Cost startDate="2016" endDate="2016">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="648624b3-5f0f-4c65-914a-bc1ec5af28e5" />
+			</Cost>
+			<Cost startDate="2016" endDate="2016">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="e24b497f-0748-4b6a-895d-52d33f73680a" />
+			</Cost>
+		</Costs>
+	</Project>
+	<BackgroundInformation>
+		<!-- Background information: relevant publications, researchers' CVs, project justification and description of the approach, the Data Management Plan, etc. -->
+	</BackgroundInformation>
+</ProjectProposal>

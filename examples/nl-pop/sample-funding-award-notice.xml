@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- A fictitious project proposal based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1336115 -->
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
+	<Project id="13045b7f-ceb0-4a3f-a82d-82c19e1994e7">
+		<Title xml:lang="en">Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia</Title>
+		<StartDate>2010-01-01</StartDate>
+		<EndDate>2015-11-30</EndDate>
+		<Funders>
+			<Funder>
+				<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+					<Acronym>NWO</Acronym>
+					<Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+					<Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+					<FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+				</OrgUnit>
+			</Funder>
+		</Funders>
+		<Consortium>
+			<Secretariat>
+				<OrgUnit id="e77efdc0-b5f7-4851-8273-ce0fbefc4938">
+					<Acronym>ICON</Acronym>
+					<Name xml:lang="en">Institute for Cultural Inquiry</Name>
+					<Name xml:lang="nl">Instituut voor Cultuurwetenschappelijk Onderzoek</Name>
+					<PartOf>
+						<OrgUnit id="c3b465ad-d07f-4d19-b209-c8bff9d1a64a">
+							<Name xml:lang="en">Faculty of Humanities</Name>
+							<Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+							<PartOf>
+								<OrgUnit id="27536e1b-a238-4931-a96a-0efc8a495a7e">
+									<Acronym>UU</Acronym>
+									<Name xml:lang="en">Utrecht University</Name>
+									<Name xml:lang="nl">Universiteit Utrecht</Name>
+								</OrgUnit>
+							</PartOf>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</Secretariat>
+			<Collaboration>
+				<OrgUnit id="7276968b-cb6e-4e41-bb86-61bf5054b00f">
+					<Acronym>HUIZINGA</Acronym>
+					<Name xml:lang="en">Huizinga Institute - The Netherlands Graduate School for Cultural History</Name>
+					<Name xml:lang="nl">Huizinga Instituut Interuniversitaire Onderzoekschool voor Cultuurgeschiedenis</Name>
+					<PartOf>
+						<OrgUnit id="261bf436-6e68-441e-9142-9d9e55d6f76a">
+							<Acronym>UvA</Acronym>
+							<Name xml:lang="en">University of Amsterdam</Name>
+							<Name xml:lang="nl">Universiteit van Amsterdam</Name>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</Collaboration>
+		</Consortium>
+		<Team>
+			<Supervisor>
+				<Person id="5bdbdd3e-369a-41ba-8ab4-e35f55a58d3c">
+					<PersonName>
+						<FamilyNames>Arps</FamilyNames>
+						<FirstNames>Ben</FirstNames>
+					</PersonName>
+					<DAI>info:eu-repo/dai/nl/071283447</DAI>
+					<ISNI>0000 0000 7956 1652</ISNI>
+				</Person>
+				<Affiliation>
+					<OrgUnit id="510f3c48-3971-4abe-8a70-992fec7d0327">
+						<Name xml:lang="en">School of Asian Studies</Name>
+						<PartOf>
+							<OrgUnit id="9078a650-75dd-4bcf-b5e0-cb2507538f4a">
+								<Acronym>LIAS</Acronym>
+								<Name xml:lang="en">Leiden Institute for Area Studies</Name>
+								<Name xml:lang="nl">Leids Instituut voor Regiostudies</Name>
+								<PartOf>
+									<OrgUnit id="e36ceab5-2d40-4d5d-b6f1-05e27bb2c6f5">
+										<Name xml:lang="en">Faculty of Humanities</Name>
+										<Name xml:lang="nl">Faculteit der Geesteswetenschappen</Name>
+										<PartOf>
+											<OrgUnit id="f6e02b60-e057-443f-94e3-80237282af30">
+												<Acronym>UL</Acronym>
+												<Name xml:lang="en">Leiden University</Name>
+												<Name xml:lang="nl">Universiteit Leiden</Name>
+											</OrgUnit>
+										</PartOf>
+									</OrgUnit>
+								</PartOf>
+							</OrgUnit>
+						</PartOf>
+					</OrgUnit>
+				</Affiliation>
+			</Supervisor>
+			<Supervisor>
+				<Person id="937d268d-45e9-4ec2-a3cb-170218531844">
+					<PersonName>
+						<FamilyNames>Müller</FamilyNames>
+						<FirstNames>Eggo</FirstNames>
+					</PersonName>
+					<DAI>info:eu-repo/dai/nl/296304654</DAI>
+					<ISNI>0000 0001 1933 0569</ISNI>
+				</Person>
+				<Affiliation>
+					<OrgUnit id="891f3ec0-454f-4fee-988d-91b4661335f9">
+						<Name xml:lang="en">Departement of Media en Culture Studies</Name>
+						<Name xml:lang="nl">Departement Media- en Cultuurwetenschappen</Name>
+						<PartOf>
+							<OrgUnit id="c3b465ad-d07f-4d19-b209-c8bff9d1a64a" />
+						</PartOf>
+					</OrgUnit>
+				</Affiliation>
+			</Supervisor>
+			<Supervisor>
+				<Person id="81b1330e-f052-4dc7-a8d5-a09afa3d5199">
+					<PersonName>
+						<FamilyNames>Uricchio</FamilyNames>
+						<FirstNames>W.C.</FirstNames>
+					</PersonName>
+					<DAI>info:eu-repo/dai/nl/099912821</DAI>
+					<ISNI>0000 0000 3915 6812</ISNI>
+				</Person>
+				<Affiliation>
+					<OrgUnit id="891f3ec0-454f-4fee-988d-91b4661335f9" />
+				</Affiliation>
+			</Supervisor>
+			<DoctoralStudent>
+				<Person id="ab6c4778-f12e-44e6-abe0-100da2c3c565">
+					<PersonName>
+						<FamilyNames>Hendrawan</FamilyNames>
+						<FirstNames>Bram</FirstNames>
+					</PersonName>
+				</Person>
+			</DoctoralStudent>
+		</Team>
+		<Abstract xml:lang="en"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
+		<Abstract xml:lang="nl"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
+		<Costs><!-- Note: fictitious amounts in a real structure -->
+			<Cost>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379">
+					<Amount currency="EUR">12</Amount>
+					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectTotalEligibleCosts</Type>
+					<Name xml:lang="en">Total eligible costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia"</Name>
+				</Funding>
+			</Cost>
+			<Cost>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129">
+					<Amount currency="EUR">6</Amount>
+					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectCostsCoveredByFunder</Type>
+					<Name xml:lang="en">The costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia" covered by the funding from NWO</Name>
+					<CoveredBy>
+						<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+							<Acronym>NWO</Acronym>
+						</OrgUnit>
+					</CoveredBy>
+					<ApplicationWithin>
+						<Funding id="be79edd0-8abd-4862-80a6-0b1891df6da6">
+							<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">Call</Type>
+							<Name xml:lang="en">The 2015 NWO Call for Projects</Name>
+							<CoveredBy>
+								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+									<Acronym>NWO</Acronym>
+								</OrgUnit>
+							</CoveredBy>
+						</Funding>
+					</ApplicationWithin>
+				</Funding>
+			</Cost>
+			<Cost startDate="2010" endDate="2010">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2011" endDate="2011">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2012" endDate="2012">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2013" endDate="2013">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2014" endDate="2014">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2015" endDate="2015">
+				<Amount currency="EUR">2</Amount>
+				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+			</Cost>
+			<Cost startDate="2010" endDate="2010">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+			<Cost startDate="2011" endDate="2011">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+			<Cost startDate="2012" endDate="2012">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+			<Cost startDate="2013" endDate="2013">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+			<Cost startDate="2014" endDate="2014">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+			<Cost startDate="2015" endDate="2015">
+				<Amount currency="EUR">1</Amount>
+				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+			</Cost>
+		</Costs>
+	</Project>
+</FundingAwardNotice>
