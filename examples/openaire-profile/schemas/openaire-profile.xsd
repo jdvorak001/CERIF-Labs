@@ -2,9 +2,7 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="urn:xmlns:eu:openaire:cris-mgr-guidelines-1.1-EXPERIMENTAL" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="urn:xmlns:eu:openaire:cris-mgr-guidelines-1.1-EXPERIMENTAL">
 
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.
-			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
-			For more information about CERIF and euroCRIS see http://www.eurocris.org/.
+		<xs:documentation>This is the XML Schema for the XXX CERIF (Common European Research Information Format) profile.
 		</xs:documentation>
 	</xs:annotation>
 
