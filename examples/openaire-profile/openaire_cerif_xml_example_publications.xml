@@ -68,6 +68,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
+								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 						</Author>
 						<Author>
@@ -137,6 +138,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
+								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 						</Editor>
 					</Editors>
@@ -168,6 +170,7 @@
 									<FamilyNames>Manghi</FamilyNames>
 									<FirstNames>Paolo</FirstNames>
 								</PersonName>
+								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7291-3210</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312346"><!-- CNR -->
@@ -181,6 +184,7 @@
 									<FamilyNames>Houssos</FamilyNames>
 									<FirstNames>Nikos</FirstNames>
 								</PersonName>
+								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0002-5277-285X</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312347"><!-- EKT -->
@@ -202,11 +206,11 @@
 									<FamilyNames>Jörg</FamilyNames>
 									<FirstNames>Brigitte</FirstNames>
 								</PersonName>
+								<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ORCID">http://orcid.org/0000-0001-7941-8108</Identifier>
 							</Person>
 							<Affiliation>
 								<OrgUnit id="312348"><!-- UKOLN -->
 									<Acronym>UKOLN</Acronym>
-									
 								</OrgUnit>
 							</Affiliation>
 						</Author>
