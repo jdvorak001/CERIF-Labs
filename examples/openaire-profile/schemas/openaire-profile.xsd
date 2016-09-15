@@ -183,6 +183,8 @@
 
 						<xs:element cflink:attribute="cfOrgUnitName.cfName" maxOccurs="unbounded" minOccurs="0" name="Name" type="cfMLangString__Type"/>
 						
+						<xs:element cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#" maxOccurs="unbounded" minOccurs="0" name="Identifier" type="cfIdentifier__Type"/>
+
 						<!-- ... -->
 
 						<xs:element cflink:entity="cfEAddr" maxOccurs="unbounded" minOccurs="0" name="ElectronicAddress" type="xs:anyURI"/>
