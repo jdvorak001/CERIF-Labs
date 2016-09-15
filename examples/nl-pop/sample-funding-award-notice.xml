@@ -30,6 +30,7 @@
 									<Acronym>UU</Acronym>
 									<Name xml:lang="en">Utrecht University</Name>
 									<Name xml:lang="nl">Universiteit Utrecht</Name>
+									<GridId>grid.5477.1</GridId>
 								</OrgUnit>
 							</PartOf>
 						</OrgUnit>
@@ -46,6 +47,7 @@
 							<Acronym>UvA</Acronym>
 							<Name xml:lang="en">University of Amsterdam</Name>
 							<Name xml:lang="nl">Universiteit van Amsterdam</Name>
+							<GridId>grid.7177.6</GridId>
 						</OrgUnit>
 					</PartOf>
 				</OrgUnit>
@@ -78,6 +80,7 @@
 												<Acronym>UL</Acronym>
 												<Name xml:lang="en">Leiden University</Name>
 												<Name xml:lang="nl">Universiteit Leiden</Name>
+												<GridId>grid.5132.5</GridId>
 											</OrgUnit>
 										</PartOf>
 									</OrgUnit>
