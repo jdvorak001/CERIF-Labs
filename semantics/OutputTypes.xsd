@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://openaire.eu/cerif/vocab/OutputTypes#"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://openaire.eu/cerif/vocab/OutputTypes#">
+   <xs:element name="Type">
+      <xs:simpleType>
+         <xs:restriction base="xs:string">
+            <xs:enumeration value="Annotation">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_a.aspx#annotation]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9f8-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Annotation</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_a.aspx#annotation</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Anthology">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_a.aspx#anthology]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9e1-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Anthology</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_a.aspx#anthology</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Book">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_b.aspx#book]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2b2f6-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Book</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_b.aspx#book</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BookChapterAbstract">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_a.aspx#abstract]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2b2f8-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Book Chapter Abstract</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_a.aspx#abstract</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BookChapterReview">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_r.aspx#review]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2b2f9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Book Chapter Review</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_r.aspx#review</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BookReview">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_r.aspx#review]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2b2f7-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Book Review</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_r.aspx#review</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="BookSeries">
+               <xs:annotation>
+                  <xs:documentation>A book series is a sequence of books having certain characteristics in common that are formally identified together as a group. Book series can be organized in different ways, such as written by the same author, or marketed as a group by their publisher. [https://en.wikipedia.org/wiki/Book_series]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>5886019b-1b77-41f9-9cd1-e58db68ef238</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Book Series</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">A book series is a sequence of books having certain characteristics in common that are formally identified together as a group. Book series can be organized in different ways, such as written by the same author, or marketed as a group by their publisher.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">https://en.wikipedia.org/wiki/Book_series</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ChapterinBook">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_c.aspx#chapter]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>b7ddff91-81b9-42b1-8228-190329ea6557</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Chapter in Book</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_c.aspx#chapter</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Commentary">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_c.aspx#commentary]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9f7-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Commentary</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_c.aspx#commentary</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ConferenceAbstract">
+               <xs:annotation>
+                  <xs:documentation>Texts of a specified length that states the issue to be discussed in a proposed conference paper. It serves as the basis for the acceptance of the paper at a conference. The abstract is published along with the paper. [http://dictionary.casrai.org/Conference_Abstract]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>154e80ab-e825-4f7c-9430-bdf7ee971425</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Conference Abstract</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Texts of a specified length that states the issue to be discussed in a proposed conference paper. It serves as the basis for the acceptance of the paper at a conference. The abstract is published along with the paper.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Conference_Abstract</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ConferencePoster">
+               <xs:annotation>
+                  <xs:documentation>Posters displayed in a conference setting and conveying research highlights in an efficient manner by compelling graphics. They may be peer-reviewed prior to acceptance and be published in the proceedings. [http://dictionary.casrai.org/Conference_Poster]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>93aa5afc-19e5-4995-99b5-47ee8c80b3fc</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Conference Poster</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Posters displayed in a conference setting and conveying research highlights in an efficient manner by compelling graphics. They may be peer-reviewed prior to acceptance and be published in the proceedings.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Conference_Poster</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ConferenceProceedings">
+               <xs:annotation>
+                  <xs:documentation>A conference proceeding is a collection of articles, published abstracs or posters gathered from a conference. Can have several editors. [Pure4 Working group - DK]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9ec-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Conference Proceedings</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">A conference proceeding is a collection of articles, published abstracs or posters gathered from a conference. Can have several editors.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">Pure4 Working group - DK</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ConferenceProceedingsArticle">
+               <xs:annotation>
+                  <xs:documentation>Papers written alone or collaboratively, presented at an academic conference, and published in the proceedings (not in scholarly journals). [http://dictionary.casrai.org/Conference_Paper]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9ed-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Conference Proceedings Article</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Papers written alone or collaboratively, presented at an academic conference, and published in the proceedings (not in scholarly journals).</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Conference_Paper</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DictionaryEntry">
+               <xs:annotation>
+                  <xs:documentation>Entries of new words, new meanings of existing words, changes in spelling and hyphenation over a longer period of time, and grammatical changes. [http://dictionary.casrai.org/Dictionary_Entry]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>71361e1a-03f1-4577-b91b-01cb87a2c280</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Dictionary Entry</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Entries of new words, new meanings of existing words, changes in spelling and hyphenation over a longer period of time, and grammatical changes.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Dictionary_Entry</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="DoctoralThesis">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_d.aspx#dissertation]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9f1-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Doctoral Thesis</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_d.aspx#dissertation</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Encyclopedia">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_e.aspx#encyclopedia]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9e5-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Encyclopedia</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_e.aspx#encyclopedia</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="EncyclopediaEntry">
+               <xs:annotation>
+                  <xs:documentation>Authored entries in a reference work or a compendium focusing on a particular domain or on all branches of knowledge. [http://dictionary.casrai.org/Encyclopedia_Entry]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>3f8f2c15-fbea-4b38-b517-3901378a9f1b</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Encyclopedia Entry</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Authored entries in a reference work or a compendium focusing on a particular domain or on all branches of knowledge.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Encyclopedia_Entry</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Journal">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_jk.aspx#journal]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9e8-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Journal</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_jk.aspx#journal</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JournalArticle">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_a.aspx#article]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9e9-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Journal Article</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_a.aspx#article</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JournalArticleAbstract">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_a.aspx#abstract]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9ea-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Journal Article Abstract</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_a.aspx#abstract</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JournalArticleReview">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_r.aspx#review]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9eb-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Journal Article Review</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_r.aspx#review</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="JournalIssue">
+               <xs:annotation>
+                  <xs:documentation>Periodical publications aimed at fostering intellectual debate and inquiry. Special journal issues are produced by editors with an established record of scholarship in the field and able to provide the direction of the theme. Journal issues bear a unique number of reference for publication. [http://dictionary.casrai.org/Journal_Issue]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>a85940d9-ad65-4a8d-ae54-23dda97c406e</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Journal Issue</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Periodical publications aimed at fostering intellectual debate and inquiry. Special journal issues are produced by editors with an established record of scholarship in the field and able to provide the direction of the theme. Journal issues bear a unique number of reference for publication.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Journal_Issue</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="LettertoEditor">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_l.aspx#lettereditor]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9ef-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Letter to Editor</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_l.aspx#lettereditor</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Master'sThesis">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_t.aspx#thesis]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>c3c85ef7-cd87-463c-9dd4-5bccc29295c8</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Master's Thesis</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_t.aspx#thesis</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Monograph">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_m.aspx#monograph]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9e2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Monograph</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_m.aspx#monograph</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Report">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_r.aspx#report]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9f2-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Report</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_r.aspx#report</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ShortCommunication">
+               <xs:annotation>
+                  <xs:documentation>A short communication paper is used to report on a hot topic to ensure the authors' precedence. In some fields it has the form of a letter (not to be mixed with Letter to Editor though). [https://www.researchgate.net/post/What_is_short_communication_paper1 made more concise; EKT]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>eda2d9f3-34c5-11e1-b86c-0800200c9a66</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Short Communication</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">A short communication paper is used to report on a hot topic to ensure the authors' precedence. In some fields it has the form of a letter (not to be mixed with Letter to Editor though).</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">https://www.researchgate.net/post/What_is_short_communication_paper1 made more concise; EKT</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Software">
+               <xs:annotation>
+                  <xs:documentation> [http://www.abc-clio.com/ODLIS/odlis_s.aspx#software]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>5b90f961-6489-4500-bb6a-5b60ead25a2d</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Software</cfTerm>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.abc-clio.com/ODLIS/odlis_s.aspx#software</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="StandardorPolicy">
+               <xs:annotation>
+                  <xs:documentation>The development of a rule or principle that is used as a basis for judgement. [http://dictionary.casrai.org/Standard_or_Policy]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>6b7fdebc-f169-4a7a-89b4-539ff69c5dcd</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Standard or Policy</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">The development of a rule or principle that is used as a basis for judgement.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Standard_or_Policy</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="WorkingPaper">
+               <xs:annotation>
+                  <xs:documentation>Preliminary versions of articles that have not undergone review but that may be shared for comment. [http://dictionary.casrai.org/Working_Paper]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class -->
+                        <cfClassId>3acbc6f9-8b04-4117-8222-f39c84c7b6c6</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Working Paper</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Preliminary versions of articles that have not undergone review but that may be shared for comment.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Working_Paper</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="MusicalComposition">
+               <xs:annotation>
+                  <xs:documentation>Original musical scores available in a format for dissemination. [http://dictionary.casrai.org/Musical_Composition]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>6a49719d-1226-454b-bff5-04b6fd3f141c</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Musical Composition</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Original musical scores available in a format for dissemination.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Musical_Composition</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Websitecontent">
+               <xs:annotation>
+                  <xs:documentation>Stand-alone locations on the web where multiple types of information on a specific theme are available. May include interactive features for contributions from readers. [http://dictionary.casrai.org/Website]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>898beff1-5f9d-4b8f-b9d8-660a783fae9a</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Website content</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">Stand-alone locations on the web where multiple types of information on a specific theme are available. May include interactive features for contributions from readers.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Website</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="Researchdatasetordatabase">
+               <xs:annotation>
+                  <xs:documentation>A series of structured observations, measurements or facts identified from the research which can be stored in a database medium. [http://dictionary.casrai.org/Data_Set]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: Output Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>b8da9b81-7cd8-4b33-88c5-28b41bbc49c9</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">Research data set or database</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">A series of structured observations, measurements or facts identified from the research which can be stored in a database medium.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://dictionary.casrai.org/Data_Set</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+         </xs:restriction>
+      </xs:simpleType>
+   </xs:element>
+</xs:schema>

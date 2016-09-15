@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="http://openaire.eu/cerif/vocab/LicenseTypes#"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified"
+           targetNamespace="http://openaire.eu/cerif/vocab/LicenseTypes#">
+   <xs:element name="License">
+      <xs:simpleType>
+         <xs:restriction base="xs:string">
+            <xs:enumeration value="CCZero(CC0)">
+               <xs:annotation>
+                  <xs:documentation>The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law. [http://creativecommons.org/publicdomain/zero/1.0/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>5c4d7157-da8c-44e2-a9c8-565fb281eac7</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Zero (CC0)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">The person who associated a work with this deed has dedicated the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/publicdomain/zero/1.0/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution(CCBY)">
+               <xs:annotation>
+                  <xs:documentation>This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>c164cfcb-bfb1-4d64-8441-ca15da24fbbf</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution (CC BY)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license lets others distribute, remix, tweak, and build upon your work, even commercially, as long as they credit you for the original creation. This is the most accommodating of licenses offered. Recommended for maximum dissemination and use of licensed materials.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution-NonCommercial(CCBY-NC)">
+               <xs:annotation>
+                  <xs:documentation>This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>e0c7250c-4c2a-4ae9-9a87-86cd19d696f3</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution-NonCommercial (CC BY-NC)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license lets others remix, tweak, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution-NonCommercial-NoDerivs(CCBY-NC-ND)">
+               <xs:annotation>
+                  <xs:documentation>This license is the most restrictive of our six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>87dcdd26-41a7-4135-b2c6-d8b1a1bcc310</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution-NonCommercial-NoDerivs (CC BY-NC-ND)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license is the most restrictive of our six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution-NonCommercial-ShareAlike(CCBY-NC-SA)">
+               <xs:annotation>
+                  <xs:documentation>This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>b668edc8-8ae0-4d55-830a-58b3c0916be5</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution-NonCommercial-ShareAlike (CC BY-NC-SA)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license lets others remix, tweak, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution-NoDerivs(CCBY-ND)">
+               <xs:annotation>
+                  <xs:documentation>This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to you. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>5f7ca0c7-2bac-4322-af72-5740dfb91838</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution-NoDerivs (CC BY-ND)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license allows for redistribution, commercial and non-commercial, as long as it is passed along unchanged and in whole, with credit to you.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="CCAttribution-ShareAlike(CCBY-SA)">
+               <xs:annotation>
+                  <xs:documentation>This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects. [http://creativecommons.org/licenses/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>bf14644d-deed-4271-bd26-602a29c75243</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">CC Attribution-ShareAlike (CC BY-SA)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">This license lets others remix, tweak, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. This license is often compared to “copyleft” free and open source software licenses. All new works based on yours will carry the same license, so any derivatives will also allow commercial use. This is the license used by Wikipedia, and is recommended for materials that would benefit from incorporating content from Wikipedia and similarly licensed projects.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://creativecommons.org/licenses/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="EuropeanUnionPublicLicence(EUPL)">
+               <xs:annotation>
+                  <xs:documentation>he EUPL is a licence, meaning a contract between a Licensor (the author of the software) and a Licensee (the user of the software, who can then use it according to the licence terms). Such licence is compulsory to authorise the widest possible use of the software: communication, copy, change or distribution, in full respect of the applicable law. The EUPL licence is “Open Source” ensuring freedoms to use, analyse, adapt and redistribute the software. [https://joinup.ec.europa.eu/software/page/eupl/how-use-eupl#section-0]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>606cf596-cc1e-4763-a5fc-400938677853</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">European Union Public Licence (EUPL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">he EUPL is a licence, meaning a contract between a Licensor (the author of the software) and a Licensee (the user of the software, who can then use it according to the licence terms). Such licence is compulsory to authorise the widest possible use of the software: communication, copy, change or distribution, in full respect of the applicable law. The EUPL licence is “Open Source” ensuring freedoms to use, analyse, adapt and redistribute the software.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">https://joinup.ec.europa.eu/software/page/eupl/how-use-eupl#section-0</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="GNUFreeDocumentationLicense(GFDL)">
+               <xs:annotation>
+                  <xs:documentation>The purpose of this License is to make a manual, textbook, or other functional and useful document "free" in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others. [http://www.gnu.org/licenses/fdl.html]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types; License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResPubl_Class; cfResProd_Class -->
+                        <cfClassId>c943e37a-9827-421e-8eda-538a83b69ff2</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">GNU Free Documentation License (GFDL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">The purpose of this License is to make a manual, textbook, or other functional and useful document "free" in the sense of freedom: to assure everyone the effective freedom to copy and redistribute it, with or without modifying it, either commercially or noncommercially. Secondarily, this License preserves for the author and publisher a way to get credit for their work, while not being considered responsible for modifications made by others.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.gnu.org/licenses/fdl.html</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="GNUGeneralPublicLicense(GPL)">
+               <xs:annotation>
+                  <xs:documentation>The GNU General Public License (GNU GPL or GPL) guarantees end users (individuals, organizations, companies) the freedoms to run, study, share (copy), and modify the software. Any derivations shall be made available under the same license. [http://www.gnu.org/licenses/gpl.html]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>10fde5b6-9add-4e51-b1db-f1b46c23ede6</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">GNU General Public License (GPL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">The GNU General Public License (GNU GPL or GPL) guarantees end users (individuals, organizations, companies) the freedoms to run, study, share (copy), and modify the software. Any derivations shall be made available under the same license.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://www.gnu.org/licenses/gpl.html</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="GNULesserGeneralPublicLicense(LGPL)">
+               <xs:annotation>
+                  <xs:documentation>The license allows developers and companies to use and integrate LGPL software into their own (even proprietary) software without being required by the terms of a strong copyleft license to release the source code of their own software-parts. The license requires that only the LGPL software-parts be modifiable by end-users via source code availability. [https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>fce5cde8-5580-495f-b036-1670ddc71fae</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">GNU Lesser General Public License (LGPL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">The license allows developers and companies to use and integrate LGPL software into their own (even proprietary) software without being required by the terms of a strong copyleft license to release the source code of their own software-parts. The license requires that only the LGPL software-parts be modifiable by end-users via source code availability.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">https://en.wikipedia.org/wiki/GNU_Lesser_General_Public_License</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ODCPublicDomainDedicationandLicense(ODCPDDL)">
+               <xs:annotation>
+                  <xs:documentation>You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) without any restritictions. [http://opendatacommons.org/licenses/pddl/summary/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>91f872ec-e853-452f-8095-05ca089799a5</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">ODC Public Domain Dedication and License (ODC PDDL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) without any restritictions.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://opendatacommons.org/licenses/pddl/summary/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ODCAttribution(ODCBY)">
+               <xs:annotation>
+                  <xs:documentation>You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) as long as you Attribute (You must attribute any public use of the database, or works produced from the database, in the manner specified in the license. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.) [http://opendatacommons.org/licenses/by/summary/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>76c33ed7-be3f-4952-8988-519592ee3428</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">ODC Attribution (ODC BY)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) as long as you Attribute (You must attribute any public use of the database, or works produced from the database, in the manner specified in the license. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database.)</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://opendatacommons.org/licenses/by/summary/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ODCOpenDatabaseLicense(ODCODbL)">
+               <xs:annotation>
+                  <xs:documentation>You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) as long as you (1) Attribute: You must attribute any public use of the database, or works produced from the database, in the manner specified in the ODbL. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database. (2) Share-Alike: If you publicly use any adapted version of this database, or works produced from an adapted database, you must also offer that adapted database under the ODbL. (3) Keep open: If you redistribute the database, or an adapted version of it, then you may use technological measures that restrict the work (such as DRM) as long as you also redistribute a version without such measures. [http://opendatacommons.org/licenses/odbl/summary/]</xs:documentation>
+                  <xs:appinfo source="CERIF">
+                     <cfClass xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <!-- class schemes: License Types -->
+      <!-- usage with OpenAIRE CERIF: cfResProd_Class -->
+                        <cfClassId>5d06e413-c510-40ad-a574-d956e6e35cca</cfClassId>
+                        <cfTerm cfLangCode="en" cfTrans="o">ODC Open Database License (ODC ODbL)</cfTerm>
+                        <cfDef cfLangCode="en" cfTrans="o">You are free to Share (to copy, distribute and use the database), to Create (to produce works from the database), to Adapt (to modify, transform and build upon the database) as long as you (1) Attribute: You must attribute any public use of the database, or works produced from the database, in the manner specified in the ODbL. For any use or redistribution of the database, or works produced from it, you must make clear to others the license of the database and keep intact any notices on the original database. (2) Share-Alike: If you publicly use any adapted version of this database, or works produced from an adapted database, you must also offer that adapted database under the ODbL. (3) Keep open: If you redistribute the database, or an adapted version of it, then you may use technological measures that restrict the work (such as DRM) as long as you also redistribute a version without such measures.</cfDef>
+                        <cfDefSrc cfLangCode="en" cfTrans="o">http://opendatacommons.org/licenses/odbl/summary/</cfDefSrc>
+                     </cfClass>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+         </xs:restriction>
+      </xs:simpleType>
+   </xs:element>
+</xs:schema>
