@@ -9,8 +9,8 @@
 	</xs:annotation>
 
 	<!-- Imports -->
-	<xs:import namespace="http://openaire.eu/cerif/vocab/OutputTypes#" schemaLocation="../CERIF-Labs/semantics/OutputTypes.xsd"/>
-	<xs:import namespace="http://openaire.eu/cerif/vocab/LicenseTypes#" schemaLocation="../CERIF-Labs/semantics/LicenseTypes.xsd"/>
+	<xs:import namespace="http://openaire.eu/cerif/vocab/OutputTypes#" schemaLocation="../../../../CERIF-Labs/semantics/OutputTypes.xsd"/>
+	<xs:import namespace="http://openaire.eu/cerif/vocab/LicenseTypes#" schemaLocation="../../../../CERIF-Labs/semantics/LicenseTypes.xsd"/>
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
 
 	<xs:element cflink:entity="cfResPubl" name="Publication">
