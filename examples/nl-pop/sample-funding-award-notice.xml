@@ -132,14 +132,14 @@
 		<Abstract xml:lang="nl"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
 		<Costs><!-- Note: fictitious amounts in a real structure -->
 			<Cost>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379">
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48">
 					<Amount currency="EUR">12</Amount>
 					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectTotalEligibleCosts</Type>
 					<Name xml:lang="en">Total eligible costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia"</Name>
 				</Funding>
 			</Cost>
 			<Cost>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129">
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf">
 					<Amount currency="EUR">6</Amount>
 					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectCostsCoveredByFunder</Type>
 					<Name xml:lang="en">The costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia" covered by the funding from NWO</Name>
@@ -149,9 +149,9 @@
 						</OrgUnit>
 					</CoveredBy>
 					<ApplicationWithin>
-						<Funding id="be79edd0-8abd-4862-80a6-0b1891df6da6">
+						<Funding id="ec6a793f-ed5e-4270-833f-74f88aa8464d">
 							<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">Call</Type>
-							<Name xml:lang="en">The 2015 NWO Call for Projects</Name>
+							<Name xml:lang="en">The 2009 NWO Call for Projects</Name>
 							<CoveredBy>
 								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
 									<Acronym>NWO</Acronym>
@@ -163,51 +163,51 @@
 			</Cost>
 			<Cost startDate="2010" endDate="2010">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2011" endDate="2011">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2012" endDate="2012">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2013" endDate="2013">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2014" endDate="2014">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2015" endDate="2015">
 				<Amount currency="EUR">2</Amount>
-				<Funding id="36627046-c41f-45bf-b565-341698da1379" />
+				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48" />
 			</Cost>
 			<Cost startDate="2010" endDate="2010">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 			<Cost startDate="2011" endDate="2011">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 			<Cost startDate="2012" endDate="2012">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 			<Cost startDate="2013" endDate="2013">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 			<Cost startDate="2014" endDate="2014">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 			<Cost startDate="2015" endDate="2015">
 				<Amount currency="EUR">1</Amount>
-				<Funding id="17f396b8-cc5e-4990-9d25-89b32c756129" />
+				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 		</Costs>
 	</Project>
