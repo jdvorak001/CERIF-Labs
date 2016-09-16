@@ -109,7 +109,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -117,7 +117,7 @@
                         			<OrgUnit id="310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>
@@ -161,7 +161,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -169,7 +169,7 @@
                         			<OrgUnit id="310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>
@@ -261,7 +261,7 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
-                        	<Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+                        	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
@@ -269,7 +269,7 @@
                         			<OrgUnit id="310001"><!-- European Commission -->
 				                        <Acronym>EC</Acronym>
 				                        <Name xml:lang="en" trans="h">European Commission</Name>
-				                        <Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
+				                        <Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#FundRefID">http://dx.doi.org/10.13039/501100000780</Identifier>
                         			</OrgUnit>
                         		</Funder>
                         	</Funders>
