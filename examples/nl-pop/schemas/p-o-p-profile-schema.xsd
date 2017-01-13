@@ -156,6 +156,7 @@
 									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="PrincipalInvestigator" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
 									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
 									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="DoctoralStudent" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="Researcher" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
