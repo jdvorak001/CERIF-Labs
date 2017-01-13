@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1354596 -->
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
+
+    <Project>
+        <Title xml:lang="en">Parables and the Partings of the Ways</Title>
+        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">10026</Identifier>
+        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">2300177581</Identifier>
+        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:dossiernummer">360-25-140</Identifier>
+        <StartDate>2013-10-01</StartDate>
+        <EndDate>2017-12-31</EndDate>
+
+		<Funders>
+			<Funder>
+				<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+					<Acronym>NWO</Acronym>
+					<Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+					<Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+					<FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+				</OrgUnit>
+			</Funder>
+		</Funders>
+
+		<Consortium>
+		
+			<Secretariat>
+				<OrgUnit id="167747dd-3847-4e63-be98-c41aaf35901b">
+					<Name xml:lang="nl">Nieuwe Testament</Name>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">81133</Identifier>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">200162257</Identifier>
+					<PartOf>
+						<OrgUnit>
+							<Name xml:lang="nl">Religiewetenschap en Theologie</Name>
+							<PartOf>
+								<OrgUnit>
+									<Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+									<PartOf>
+										<OrgUnit>
+											<Name xml:lang="nl">Universiteit Utrecht</Name>
+										</OrgUnit>
+									</PartOf>
+								</OrgUnit>
+							</PartOf>
+						</OrgUnit>
+					</PartOf>
+				</OrgUnit>
+			</Secretariat>
+			
+		</Consortium>
+
+		<Team>
+
+			<PrincipalInvestigator><!-- Hoofdaanvrager -->
+				<Person>
+					<PersonName>
+						<FamilyNames>Ottenheijm</FamilyNames>
+						<FirstNames>H.L.M.</FirstNames>
+					</PersonName>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">240854</Identifier>
+			        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">3400135477</Identifier>
+			        <Classification scheme="urn:xmlns:nl:pop-project:vocab:Genders">m</Classification>
+			        <!-- TODO: the "DR" title -->
+				</Person>
+				<Affiliation>
+					<OrgUnit id="167747dd-3847-4e63-be98-c41aaf35901b"/>
+				</Affiliation>
+			</PrincipalInvestigator>
+
+			<Researcher><!-- Uitvoerder -->
+				<Person>
+					<PersonName>
+		                <FamilyNames>Teugels</FamilyNames>
+		                <FirstNames>G.M.G. (Lieve)</FirstNames>
+					</PersonName>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">105340</Identifier>
+			        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">400107608</Identifier>
+			        <Classification scheme="urn:xmlns:nl:pop-project:vocab:Genders">f</Classification>
+			        <!-- TODO: the "DR" title -->
+				</Person>
+				<Affiliation>
+					<OrgUnit>
+						<Name xml:lang="nl">Godsdienstwijsbegeerte en Ethiek</Name>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">80642</Identifier>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">153585</Identifier>
+						<PartOf>
+							<OrgUnit>
+								<Name xml:lang="nl">Religiewetenschap en Theologie</Name>
+								<PartOf>
+									<OrgUnit>
+										<Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+										<PartOf>
+											<OrgUnit>
+												<Name xml:lang="nl">Universiteit Utrecht</Name>
+											</OrgUnit>
+										</PartOf>
+									</OrgUnit>
+								</PartOf>
+							</OrgUnit>
+						</PartOf>
+					</OrgUnit>
+				</Affiliation>
+			</Researcher>
+
+			<!-- "Niet bekend" skipped -->
+
+			<Researcher><!-- Uitvoerder -->
+				<Person>
+					<PersonName>
+		                <FamilyNames>Oegema</FamilyNames>
+		                <FirstNames>A. (Albertina)</FirstNames>
+					</PersonName>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">290780</Identifier>
+			        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">3400186730</Identifier>
+			        <Classification scheme="urn:xmlns:nl:pop-project:vocab:Genders">f</Classification>
+			        <!-- TODO: the "DRS" title -->
+				</Person>
+				<Affiliation>
+					<OrgUnit>
+						<Name xml:lang="nl">Filosofie en Religiewetenschap</Name>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">76326</Identifier>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">3400062405</Identifier>
+						<PartOf>
+							<OrgUnit>
+								<Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+								<PartOf>
+									<OrgUnit>
+										<Name xml:lang="nl">Universiteit Utrecht</Name>
+									</OrgUnit>
+								</PartOf>
+							</OrgUnit>
+						</PartOf>
+					</OrgUnit>
+				</Affiliation>
+			</Researcher>
+
+			<Researcher><!-- Uitvoerder -->
+				<Person>
+					<PersonName>
+		                <FamilyNames>Pater</FamilyNames>
+		                <FirstNames>J.J.J. (Jonathan)</FirstNames>
+					</PersonName>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">298202</Identifier>
+			        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">3400194233</Identifier>
+			        <Classification scheme="urn:xmlns:nl:pop-project:vocab:Genders">m</Classification>
+			        <!-- TODO: the "DRS" title -->
+				</Person>
+				<Affiliation>
+					<OrgUnit>
+						<Name xml:lang="nl">Tilburg School of Catholic Theology</Name>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">48818</Identifier>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">1400164454</Identifier>
+						<PartOf>
+							<OrgUnit>
+								<Name xml:lang="en">Tilburg University</Name>
+							</OrgUnit>
+						</PartOf>
+					</OrgUnit>
+				</Affiliation>
+			</Researcher>
+
+			<Researcher><!-- Uitvoerder -->
+				<Person>
+					<PersonName>
+		                <FamilyNames>Stoutjesdijk</FamilyNames>
+		                <FirstNames>M.J. (Martijn)</FirstNames>
+					</PersonName>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">290794</Identifier>
+			        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">3400186746</Identifier>
+			        <Classification scheme="urn:xmlns:nl:pop-project:vocab:Genders">m</Classification>
+			        <!-- TODO: the "DRS" title -->
+				</Person>
+				<Affiliation>
+					<OrgUnit>
+						<Name xml:lang="en">Tilburg University</Name>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">26863</Identifier>
+						<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">200160553</Identifier>
+					</OrgUnit>
+				</Affiliation>
+			</Researcher>
+
+		</Team>
+
+		<Abstract xml:lang="EN">This comparative research on Jewish and Christian parables is guided by the question of why the production of parables ceased in Christianity whereas this genre remained in use in Rabbinic Judaism. The hypothesis tested in this project is that the genre of the narrative parable is part of the Jewish culture of Northern Palestine, in particular Galilee, and the end of Christian parable production is reflective of a geographical, cultural and religious split between Christianity and Judaism. This split, labelled as the ?parting(s) of the ways?, arguably informs much of Christian-Jewish relations to this day. The first part of the project assesses the shared discursive space of these parables by focussing on the social, cultural and religious imaginary as present in the narratives. The second part discusses the continuation and the end of this genre in Rabbinic Judaism and Christianity, respectively, within the context of rise of Christianity and Rabbinic Judaism as separate religions. Both Jesus and the Rabbis made extensive use of parables to construct and illustrate their teachings. Parables are fictive narratives with highly rhetorical aims. In order to perform their rhetorical function parables draw their literary motifs and plots from real- life situations, thus bridging the world of religion with everyday life of the recipient. The project analyses how the flourishing of this genre in the cultural and religious setting of Galilee, traces its development in Rabbinic Judaism and relates its disappearance in Christianity to cultural and religious changes indicating the rise of Christianity as a new religion. In tracing the development of a genre as reflective of social and historical changes, this project marks a highly innovative approach in parable research and promises new insights into the birth of religions. The project evolves in three stages. Since a scholarly edition is still lacking, a textual edition of all extant early Rabbinic parables is prepared, facilitating this and future parable research. The second stage involves comparative studies of Christian and Jewish parables on family relations, on slavery and on common meals. These motifs reflect social images related to Jewish households and voluntary associations in Late Antique Galilee and afford perfect occasions for comparative and interdisciplinary research. The aim of this approach is to read fictive stories as embedded in historical reality. Each of these projects assesses how parables process social and religious realities and reflect the rise of religious movements within Judaism. To assess these realities the parables will be analysed within the historical frame of first-century Jewish households and voluntary associations, Jewish legal history, and the archaeology of Galilee. This interdisciplinary, comprehensive approach to parables is new but highly promising. In the third stage, the development of the genre in Rabbinic sources as exegetical tools and the rise of allegorizing commentaries in second century Christianity are discussed in a comparative perspective. The end of the conventional rhetorical and hermeneutical function of this genre in Christianity indicates a new form of religious authority and correlates with the emergence of Christianity as a separate religion.</Abstract>
+		
+		<Costs>
+			<Cost>
+				<Funding id="d08f304d-1498-4ad5-a1e1-033547dbf058">
+					<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes">ProjectTotalEligibleCosts</Type>
+					<Name xml:lang="en">Total eligible costs of the project "Parables and the Partings of the Ways"</Name>
+				</Funding>
+			</Cost>
+			<Cost>
+				<Funding id="ad5866e0-521b-4771-9fd5-008a662ee665">
+					<Amount currency="EUR">6</Amount>
+					<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
+					<Name xml:lang="en">The costs of the project "Parables and the Partings of the Ways" covered by the funding from NWO</Name>
+					<CoveredBy>
+						<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+							<Acronym>NWO</Acronym>
+						</OrgUnit>
+					</CoveredBy>
+					<ApplicationWithin>
+						<Funding id="a2f9b5ef-f231-45f5-97f8-c53bcdc00dfe">
+							<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
+							<Name xml:lang="en">Free Competition/Free Competition GW VC 2013 GW</Name>
+							<CoveredBy>
+								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+									<Acronym>NWO</Acronym>
+								</OrgUnit>
+							</CoveredBy>
+						</Funding>
+					</ApplicationWithin>
+				</Funding>
+			</Cost>
+		</Costs>
+
+<!-- NOT TRANSLATED:
+        <status>current</status>
+        <researchType>project</researchType>
+        <mutationDate>2016-01-14</mutationDate>
+ -->
+    </Project>
+
+</FundingAwardNotice>
