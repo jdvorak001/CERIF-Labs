@@ -109,7 +109,11 @@
 						<Project id="112345"><!-- OpenAIREplus -->
 		                    <Acronym>OpenAIREplus</Acronym>
 	                        <Title xml:lang="en">2nd-Generation Open Access Infrastructure for Research in Europe</Title>
+<<<<<<< HEAD
                         	<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+=======
+                        	<Identifier type="http://eurocris.org/cerif/vocab/IdentifierTypes#ProjectReference">283595</Identifier>
+>>>>>>> branch 'master' of https://github.com/jdvorak001/CERIF-Labs.git
 						    <StartDate>2011-12-01</StartDate>
                         	<EndDate>2014-05-31</EndDate>
                         	<Funders>
