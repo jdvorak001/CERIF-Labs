@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
+   <!--A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1354596 -->
+   <Project>
+      <Title xml:lang="en">Parables and the Partings of the Ways</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:isaac">10026</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:delphi">2300177581</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#nwo:dossiernummer">360-25-140</Identifier>
+      <StartDate>2014-04-01</StartDate>
+      <EndDate>2019-09-30</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+               <Acronym>NWO</Acronym>
+               <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+               <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+               <FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium/>
+   </Project>
+</FundingAwardNotice>
