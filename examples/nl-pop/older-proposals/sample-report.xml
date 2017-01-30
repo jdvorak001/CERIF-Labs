@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Report xmlns="urn:xmlns:nl:pop-project:research-report-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:research-report-1.0-EXPERIMENTAL ../../profile2.xsd">
+	<Metainformation>
+		<Title xml:lang="en">The 2016 report on research at the University of Groningen funded by NWO</Title>
+		<From>
+			<OrgUnit id="e5bf121d-3ce7-4bee-8890-f01fb4a3dc73">
+				<Acronym>RUG</Acronym>
+				<Name xml:lang="en" trans="h">University of Groningen</Name>
+				<Name xml:lang="nl">Rijksuniversiteit Groningen</Name>
+				<FundRefId>http://dx.doi.org/10.13039/501100001721</FundRefId>
+				<GridId>grid.4830.f</GridId>
+			</OrgUnit>
+		</From>
+		<For>
+			<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+				<Acronym>NWO</Acronym>
+				<Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+				<Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+				<FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+			</OrgUnit>
+		</For>
+	</Metainformation>
+	<Contents>
+		<OrganisationStructure>
+			<OrgUnit id="e5bf121d-3ce7-4bee-8890-f01fb4a3dc73">
+				<Acronym>RUG</Acronym>
+				<Name xml:lang="en" trans="h">University of Groningen</Name>
+				<Name xml:lang="nl">Rijksuniversiteit Groningen</Name>
+				<FundRefId>http://dx.doi.org/10.13039/501100001721</FundRefId>
+				<GridId>grid.4830.f</GridId>
+				<Parts>
+					<Part>
+						<OrgUnit id="7bd475bf-c59e-467c-bfb9-66859840d129">
+							<Name xml:lang="en" trans="h">Faculty of Mathematics and Science</Name>
+							<Name xml:lang="nl">Faculteit der Wiskunde en Natuurwetenschappen</Name>
+						</OrgUnit>
+					</Part>
+					<!-- ... -->
+				</Parts>
+			</OrgUnit>
+		</OrganisationStructure>
+		<ProjectSpending>
+			<Project id="54241411-0b2f-4db8-9729-5cadf3fe96c3">
+				<ProjectReference>040.11.511</ProjectReference>
+				<ProjectReference>OND1359875</ProjectReference>
+				<Title xml:lang="en">Modeling of ion beam-induced bending of nanostructures</Title>
+				<StartDate>2016-03</StartDate>
+				<EndDate>2016-11</EndDate>
+				<Funders>
+					<Funder>
+						<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+							<Acronym>NWO</Acronym>
+						</OrgUnit>
+					</Funder>
+				</Funders>
+				<Consortium>
+					<Secretariat>
+						<OrgUnit id="c983cf36-00c3-4834-9ae2-b12eac5f0637">
+							<Name xml:lang="en">Zernike Institute for Advanced Materials</Name>
+							<PartOf>
+								<OrgUnit id="7bd475bf-c59e-467c-bfb9-66859840d129" />
+							</PartOf>
+						</OrgUnit>
+					</Secretariat>
+				</Consortium>
+				<Team>
+					<PrincipalInvestigator>
+						<Person id="a14c6680-effb-4a20-98b5-1259f751b1bb">
+							<PersonName>
+								<FamilyNames>Hosson</FamilyNames>
+								<FirstNames>J.Th.M.</FirstNames>
+								<OtherNames>de</OtherNames>
+							</PersonName>
+						</Person>
+						<Affiliation>
+							<OrgUnit id="c983cf36-00c3-4834-9ae2-b12eac5f0637" />
+						</Affiliation>
+					</PrincipalInvestigator>
+				</Team>
+				<Abstract xml:lang="en">as per http://www.narcis.nl/research/RecordID/OND1359875</Abstract>
+				<Costs>
+					<Cost startDate="2016" endDate="2016">
+						<Amount currency="EUR">1</Amount>
+						<Funding>
+							<Amount currency="EUR">1</Amount>
+							<Type>TotalEligibleCosts</Type>
+						</Funding>
+					</Cost>
+					<Cost startDate="2016" endDate="2016">
+						<Amount currency="EUR">1</Amount>
+						<Funding>
+							<Amount currency="EUR">1</Amount>
+							<Type>CoveredByFunding</Type>
+							<CoveredBy>
+								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
+									<Acronym>NWO</Acronym>
+								</OrgUnit>
+							</CoveredBy>
+						</Funding>
+					</Cost>
+				</Costs>
+			</Project>
+			<!-- ... -->
+		</ProjectSpending>
+		<ResearchOutputs>
+			<Publication id="8033657e-6ea9-42e1-b768-d28cbec8ca31">
+				<Title xml:lang="en">On the role of the residual stress state in product manufacturing</Title>
+				<Type>JournalArticle</Type>
+				<Identifier type="DOI">http://dx.doi.org/10.1016/j.matdes.2016.05.085</Identifier>
+				<PublicationDate>2016-09-05</PublicationDate>
+				<PublishedIn>
+					<PublishingChannel>
+						<Title xml:lang="en">Materials &amp; Design</Title>
+						<Type>Journal</Type>
+						<Identifier type="ISSN">0264-1275</Identifier>
+					</PublishingChannel>
+				</PublishedIn>
+				<Authors>
+					<Author>
+						<Person>
+							<PersonName>
+								<FamilyNames>Zĳlstra</FamilyNames>
+								<FirstNames>G.</FirstNames>
+							</PersonName>
+						</Person>
+					</Author>
+					<Author>
+						<Person>
+							<PersonName>
+								<FamilyNames>Groen</FamilyNames>
+								<FirstNames>M.</FirstNames>
+							</PersonName>
+						</Person>
+					</Author>
+					<Author>
+						<Person>
+							<PersonName>
+								<FamilyNames>Post</FamilyNames>
+								<FirstNames>J.</FirstNames>
+							</PersonName>
+						</Person>
+					</Author>
+					<Author>
+						<Person>
+							<PersonName>
+								<FamilyNames>Ocelík</FamilyNames>
+								<FirstNames>V.</FirstNames>
+							</PersonName>
+						</Person>
+					</Author>
+					<Author>
+						<Person>
+							<PersonName>
+								<FamilyNames>Hosson</FamilyNames>
+								<FirstNames>J.Th.M.</FirstNames>
+								<OtherNames>de</OtherNames>
+							</PersonName>
+						</Person>
+					</Author>
+				</Authors>
+				<Volume>105</Volume>
+				<StartPage>375</StartPage>
+				<EndPage>380</EndPage>
+				<Keyword xml:lang="en">Residual stress</Keyword>
+				<Keyword xml:lang="en">Stress relaxation</Keyword>
+				<Keyword xml:lang="en">Creep</Keyword>
+				<Keyword xml:lang="en">Shape change</Keyword>
+				<Keyword xml:lang="en">Metal forming</Keyword>
+				<Keyword xml:lang="en">AISI 420</Keyword>
+				<Abstract xml:lang="en">This paper concentrates on the effect of the residual stress state during product manufacturing of AISI 420 steel on the final shape of the product. The work includes
+					Finite Element (FE) calculations of the distribution of the residual stresses after metal forming and a heat treatment. The evolution of the residual stress state is predicted employing a creep
+					model which was calibrated through creep experiments ranging between 500 and 700 °C. The creep model is implemented in the FE software together with material specific parameters to simulate a
+					thermal treatment of the product including residual stresses. The complete simulation is validated by a comparison of the predicted shape change with the actual cold-formed and hardened product.
+					An important message of this paper is that, in contrast to what is commonly believed, residual stresses play a crucial role during creep and that a shape change may occur at lower temperatures,
+					i.e. not at higher temperatures and in fact below the transformation temperature in this AISI 420 steel. This surprising conclusion is essential for keeping the shape change during product
+					manufacturing minimal.</Abstract>
+				<Originator>
+					<Project id="54241411-0b2f-4db8-9729-5cadf3fe96c3" />
+				</Originator>
+			</Publication>
+			<!-- ... -->
+		</ResearchOutputs>
+	</Contents>
+</Report>
