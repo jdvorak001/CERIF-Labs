@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359943 -->
+   <Project id="d25966"><!-- RU-secretariat -->
+      <Title xml:lang="en">Characterising the molecular-physiological basis of pollen abortion upon prolonged high temperature stress</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359943</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359943</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d2937">
+               <Acronym>NWO-ALW</Acronym>
+               <Name xml:lang="en">NWO Council for Earth and Life Sciences</Name>
+               <Name xml:lang="nl">NWO Aard- en Levenswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1234995</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1234995</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d1687">
+               <Name xml:lang="en">Institute for Wetland and Water Research</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242504</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242504</Identifier>
+               <PartOf>
+                  <OrgUnit id="d1390">
+                     <Name xml:lang="en">Faculty of Science</Name>
+                     <Name xml:lang="nl">Faculteit der Natuurwetenschappen, Wiskunde en Informatica</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238303</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238303</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. I. (Ivo) Rieu</DisplayName>
+            <Person id="d20599">
+               <PersonName>
+                  <FamilyNames>Rieu</FamilyNames>
+                  <FirstNames>I. (Ivo)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1327528</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1327528</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 6990 238X</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1687"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">Our climate is currently changing at a relatively fast pace and significant increases in global average temperatures are predicted for the coming decades. Ambient temperature doesn?t only affect organisms in natural environments, but also the crop plants on our fields. In particular, elevated temperatures reduce male fertility of plants, and thereby seed and fruit yields. In this project we will establish why male reproductive development is deregulated at elevated temperatures and develop strategies and tools to improve resilience of crops to heat stress.</Abstract>
+   </Project>
+</FundingAwardNotice>

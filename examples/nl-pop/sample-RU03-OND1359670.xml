@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359670 -->
+   <Project id="d25745"><!-- RU-secretariat -->
+      <Title xml:lang="en">The nucleosome landscape of Plasmodium falciparum reveals chromatin architecture and dynamics of regulatory sequences</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359670</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359670</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2016-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d6891">
+               <Acronym>NWO-N</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Natuurkunde</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1241386</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1241386</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d144">
+               <Acronym>Radboudumc</Acronym>
+               <Name xml:lang="en">Radboud University Medical Center</Name>
+               <Name xml:lang="nl">Radboud Universitair Medisch Centrum</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238551</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238551</Identifier>
+               <PartOf>
+                  <OrgUnit id="d11">
+                     <Acronym>RU</Acronym>
+                     <Name xml:lang="en">Radboud University Nijmegen</Name>
+                     <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. R.C. (Richard) Bartfai</DisplayName>
+            <Person id="d25748">
+               <PersonName>
+                  <FamilyNames>Bartfai</FamilyNames>
+                  <FirstNames>R.C. (Richard)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1326829</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1326829</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/304795542</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1695">
+                  <Acronym>RIMLS</Acronym>
+                  <Name xml:lang="en">Radboud Institute for Molecular Life Sciences</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237444</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237444</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d11"/>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+   </Project>
+</FundingAwardNotice>

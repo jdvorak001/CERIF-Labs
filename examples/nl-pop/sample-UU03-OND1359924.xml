@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359924 -->
+   <Project id="d25955"><!-- UU-secretariat -->
+      <Title xml:lang="en">Annotating History: Managing Digitized Heritage Interactively</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359924</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359924</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2017-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3">
+               <Acronym>NWO-GW</Acronym>
+               <Name xml:lang="en">NWO Council for the Humanities</Name>
+               <Name xml:lang="nl">NWO Geesteswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235107</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235107</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d506">
+               <Name xml:lang="en">Department of Languages, Literature and Communication</Name>
+               <Name xml:lang="nl">Departement Talen, Literatuur en Communicatie</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1239049</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1239049</Identifier>
+               <PartOf>
+                  <OrgUnit id="d196">
+                     <Name xml:lang="en">Faculty of Humanities</Name>
+                     <Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242119</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242119</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d71">
+                           <Acronym>UU</Acronym>
+                           <Name xml:lang="en">Utrecht University</Name>
+                           <Name xml:lang="nl">Universiteit Utrecht</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Prof.dr. A.S.Q. (Arnoud) Visser</DisplayName>
+            <Person id="d25958">
+               <PersonName>
+                  <FamilyNames>Visser</FamilyNames>
+                  <FirstNames>A.S.Q. (Arnoud)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1245167</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1245167</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 1631 6753</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/120007657</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d506"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+   </Project>
+</FundingAwardNotice>

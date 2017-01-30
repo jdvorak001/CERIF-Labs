@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359693 -->
+   <Project id="d25753"><!-- RU-secretariat -->
+      <Title xml:lang="en">Optimising Software Delivery with Streaming Software Analytics</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359693</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359693</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2021-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3393">
+               <Acronym>NWO-EW</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Exacte Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235000</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235000</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d1388">
+               <Name xml:lang="en">Institute for Computing and Information Sciences - ICIS</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238333</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238333</Identifier>
+               <PartOf>
+                  <OrgUnit id="d1390">
+                     <Name xml:lang="en">Faculty of Science</Name>
+                     <Name xml:lang="nl">Faculteit der Natuurwetenschappen, Wiskunde en Informatica</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238303</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238303</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr.ir. G.I. (Georgios) Gousios</DisplayName>
+            <Person id="d25756">
+               <PersonName>
+                  <FamilyNames>Gousios</FamilyNames>
+                  <FirstNames>G.I. (Georgios)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1333574</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1333574</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 7964 4730</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1388"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">In an era where many fields of economic production strive for higher efficiency through data-driven decision making, software production (from development to deployment and running) has yet to live up to the challenge. Insights stemming from the real-time analysis of software engineering data can help developers, project managers and devops teams to make informed decisions faster. With the CodeFeed project, we aim to make software analytics a core feedback loop for software engineering projects. Our platform will integrate data from both development time and run time data sources and present them in a uniform fashion as streams; a query/stream processing language will allow the arbitrary combination of streams to produce new streams; and a novel data summarization framework will enable high-level reports to be composed by end users. We will combine our streaming software analytics framework with existing streaming data sources (GHTorrent) and offer it as a service to any project hosted by the GitHub hosting platform. The key innovations resulting from the proposed project are: (1) A software platform that unifies archival and current software analytics data under a single query language, (2) New techniques and methods for high-level aggregation and summarization of near real-time information about software development, and (3) Open access datasets and results of the application of the developed tool set on millions of open source software repositories. The strong track record of the project's consortium in the field of software analytics enables it to perform this novel research.</Abstract>
+   </Project>
+</FundingAwardNotice>

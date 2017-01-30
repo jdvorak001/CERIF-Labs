@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1360015 -->
+   <Project id="d25997"><!-- RU-secretariat -->
+      <Title xml:lang="en">Controlled growth of protocells</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1360015</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360015</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2019-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d4929">
+               <Acronym>NWO-CW</Acronym>
+               <Name xml:lang="en">NWO Council for Chemical Sciences</Name>
+               <Name xml:lang="nl">NWO Chemische Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1234998</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1234998</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d1693">
+               <Acronym>IMM</Acronym>
+               <Name xml:lang="en">Institute for Molecules and Materials</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237987</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237987</Identifier>
+               <PartOf>
+                  <OrgUnit id="d1390">
+                     <Name xml:lang="en">Faculty of Science</Name>
+                     <Name xml:lang="nl">Faculteit der Natuurwetenschappen, Wiskunde en Informatica</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238303</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238303</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr.ir. E. (Evan) Spruijt</DisplayName>
+            <Person id="d26000">
+               <PersonName>
+                  <FamilyNames>Spruijt</FamilyNames>
+                  <FirstNames>E. (Evan)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1319389</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1319389</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 9409 9656</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/343053586</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1693"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">This proposal aims at creating actively growing protocells from metabolizing droplets in an aqueous two-phase system. Bottom-up synthesis of fully functional cells that grow, divide and adapt like natural cells do, is one of the biggest scientific challenges of this century. A crucial step in this challenge is to learn how to initiate and control the growth of the current, non-growing, man-made mimics of natural cells, called protocells. Growth allows (proto)cells to prepare for division, reproduction or specialization, and thereby to renew their constituents, to recycle old components and to stay alive. Here, I propose to use aqueous two-phase systems (ATPS) as the basis for growing protocells. ATPS?s occur naturally inside living cells, for instance as Cajal bodies or centrosomes, and provide an excellent, bio-inspired basis for actively growing protocells. Both the protocells and the surrounding phase consist largely of water, but they remain well separated without a membrane. ATPS-based protocells can exchange small molecules with their environment and sustain cell-like crowding conditions. In this proposal I will combine these properties to realize, for the first time, active and controlled growth of protocells. ATPS protocells can be made and manipulated with unrivaled reliability by microfluidics-based methods. Three ATPS systems are proposed in which the growth can be controlled in different ways: (A) an enzyme-catalyzed system of biopolymers, (B) a centrosome-like system of phase-separating proteins and (C) a peptide/nucleotide-based complex coacervate system. In all three systems in vitro transcription and translation can be used to further control the growth. These growing protocells will deepen our understanding of the fundamentals of simultaneous reaction, diffusion and phase separation, and provide insights into general principles underlying the cell cycle.</Abstract>
+   </Project>
+</FundingAwardNotice>

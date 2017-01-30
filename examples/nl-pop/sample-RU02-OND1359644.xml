@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359644 -->
+   <Project id="d25739"><!-- RU-secretariat -->
+      <Title xml:lang="en">Efficient optimal control computation by Monte Carlo sampling</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359644</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359644</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2017-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3393">
+               <Acronym>NWO-EW</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Exacte Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235000</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235000</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d538">
+               <Name xml:lang="en">Donders Centre for Neuroscience</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242494</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242494</Identifier>
+               <PartOf>
+                  <OrgUnit id="d260">
+                     <Name xml:lang="en">Donders Institute for Brain, Cognition and Behaviour</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1243002</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1243002</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Prof.dr. H.J. (Bert) Kappen</DisplayName>
+            <Person id="d541">
+               <PersonName>
+                  <FamilyNames>Kappen</FamilyNames>
+                  <FirstNames>H.J. (Bert)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1242283</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1242283</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 8410 7171</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/147972590</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d542">
+                  <Name xml:lang="en">Department of Cognitive Neuroscience</Name>
+                  <Name xml:lang="nl">Afdeling Cognitive Neuroscience</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237009</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237009</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d144">
+                        <Acronym>Radboudumc</Acronym>
+                        <Name xml:lang="en">Radboud University Medical Center</Name>
+                        <Name xml:lang="nl">Radboud Universitair Medisch Centrum</Name>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238551</Identifier>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238551</Identifier>
+                        <PartOf>
+                           <OrgUnit id="d11"/>
+                        </PartOf>
+                     </OrgUnit>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+            <Affiliation>
+               <OrgUnit id="d538"/>
+            </Affiliation>
+            <Affiliation>
+               <OrgUnit id="d544">
+                  <Name xml:lang="en">Biophysics</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237010</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237010</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d538"/>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">Stochastic optimal control theory (SOC) considers the problem to compute an optimal sequence of actions to attain a future goal. Solving this for high dimensional systems is difficult in general. Path integral (PI) control problems (Kappen 2005) represent a large class of non-linear control problems for which the optimal control and the optimal cost-to-go can be expressed in closed form as a Feyman- Kac path integral. As a result, the optimal control can be estimated using Monte Carlo sampling. The path integral control methods has been applied with great success in robotics by various leading robotics research groups world wide. The MC sampling can be significantly accelerated using importance sampling (IS), It can be shown that better controllers, in the sense of control cost, are better importance samplers, in terms of sampling efficiency. This allows the design of adaptive importance samplers using self-generated data. Arbitrary control precision can be achieved by increasing the data size and the model complexity, such as for instance deep neural networks. This approach scales to very large control problems, much larger than can be currently solved using the Bellman equation PDE. The long term vision is to build a computer infrastructure that computes a controller for any user specified control problem. This pilot project will provide the first step to parallelize this computation and to assess the scalability of this approach for large complex control problems. Specifically, we aim to demonstrate improved solutions to three control problems in three neuroscience and robotics applications.</Abstract>
+   </Project>
+</FundingAwardNotice>

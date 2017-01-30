@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359931 -->
+   <Project id="d25959"><!-- UU-secretariat -->
+      <Title xml:lang="en">Cinefiel Publiek in de Dop? (NL)</Title>
+      <Title xml:lang="nl">Cinefiel Publiek in de Dop?</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359931</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359931</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2016-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3">
+               <Acronym>NWO-GW</Acronym>
+               <Name xml:lang="en">NWO Council for the Humanities</Name>
+               <Name xml:lang="nl">NWO Geesteswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235107</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235107</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d194">
+               <Name xml:lang="en">Department of Media en Culture Studies</Name>
+               <Name xml:lang="nl">Departement Media- en Cultuurwetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242770</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242770</Identifier>
+               <PartOf>
+                  <OrgUnit id="d196">
+                     <Name xml:lang="en">Faculty of Humanities</Name>
+                     <Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242119</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242119</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d71">
+                           <Acronym>UU</Acronym>
+                           <Name xml:lang="en">Utrecht University</Name>
+                           <Name xml:lang="nl">Universiteit Utrecht</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. M. (Marijke) de Valck</DisplayName>
+            <Person id="d25962">
+               <PersonName>
+                  <FamilyNames>Valck</FamilyNames>
+                  <FirstNames>M. (Marijke)</FirstNames>
+                  <OtherNames>de</OtherNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1291500</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1291500</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 3556 2864</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/282341501</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d202">
+                  <Name xml:lang="en">Media Studies</Name>
+                  <Name xml:lang="nl">Capaciteitsgroep Mediastudies</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237292</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237292</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d204">
+                        <Name xml:lang="en">Department of Media Studies</Name>
+                        <Name xml:lang="nl">Afdeling Mediastudies</Name>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1241725</Identifier>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1241725</Identifier>
+                        <PartOf>
+                           <OrgUnit id="d206">
+                              <Name xml:lang="en">Faculty of Humanities</Name>
+                              <Name xml:lang="nl">Faculteit der Geesteswetenschappen</Name>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238759</Identifier>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238759</Identifier>
+                              <PartOf>
+                                 <OrgUnit id="d208">
+                                    <Acronym>UvA</Acronym>
+                                    <Name xml:lang="en">University of Amsterdam</Name>
+                                    <Name xml:lang="nl">Universiteit van Amsterdam</Name>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238527</Identifier>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238527</Identifier>
+                                 </OrgUnit>
+                              </PartOf>
+                           </OrgUnit>
+                        </PartOf>
+                     </OrgUnit>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+   </Project>
+</FundingAwardNotice>

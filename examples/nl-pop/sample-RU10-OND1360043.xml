@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1360043 -->
+   <Project id="d26005"><!-- RU-secretariat -->
+      <Title xml:lang="en">Peering into the human mind: Decoding internal representations from brain activity</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1360043</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360043</Identifier>
+      <StartDate>2015-01-01</StartDate>
+      <EndDate>2020-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3393">
+               <Acronym>NWO-EW</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Exacte Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235000</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235000</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d3366">
+               <Name xml:lang="en">Donders Centre for Cognitive Neuroimaging</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1241082</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1241082</Identifier>
+               <PartOf>
+                  <OrgUnit id="d260">
+                     <Name xml:lang="en">Donders Institute for Brain, Cognition and Behaviour</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1243002</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1243002</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. M.A.J. (Marcel) van Gerven</DisplayName>
+            <Person id="d7579">
+               <PersonName>
+                  <FamilyNames>Gerven</FamilyNames>
+                  <FirstNames>M.A.J. (Marcel)</FirstNames>
+                  <OtherNames>van</OtherNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1295184</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1295184</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 9318 7259</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/269428062</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d258">
+                  <Acronym>DCC</Acronym>
+                  <Name xml:lang="en">Donders Centre for Cognition</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236941</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236941</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d260"/>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">Being able to read the human mind by directly tapping into brain activity has been a recurring topic in the science fiction literature. New computational advances in cognitive neuroscience are starting to make this fiction a real possibility. For example, a number of research groups have recently shown that perceived stimuli could be reconstructed from measured brain activity. However, reconstructions are typically based on activity in a restricted set of brain regions, leading to degraded reconstruction performance. Furthermore, reconstruction of imagined stimuli from brain activity in the absence of external stimulation has had limited success. Importantly, accurate reconstruction of such internally generated representations provides a unique window into the human mind and provides the basis for new brain-computer interface applications. This proposal will advance the state of the art in decoding of internal representations. A sophisticated deep learning framework is developed which allows high-throughput analysis of brain activity in the presence of complex naturalistic stimulation. The framework provides a sensitive automated mapping of both low-level and high-level stimulus features across the cortical surface. It will be applied to fMRI data acquired as subjects experience rich naturalistic stimuli that reflect real-world sensory input as encountered in our daily lives. This will provide essential new insights into how stimuli are represented across the cortical surface of the human brain. Given measured brain activity, the framework can also be used to obtain high-quality reconstructions of experienced stimuli by employing a sophisticated sampling approach. This provides a complementary view on the information content of different brain regions. Finally, the framework will be used to reconstruct imagined stimuli in the absence of external sensory input, demonstrating accurate decoding of internally generated representations from human brain activity. This provides the basis for the next generation of brain-computer interfaces and allows investigation of subjective differences in perception.</Abstract>
+   </Project>
+</FundingAwardNotice>

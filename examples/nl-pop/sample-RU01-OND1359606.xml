@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359606 -->
+   <Project id="d25720"><!-- RU-secretariat -->
+      <Title xml:lang="en">A closer look at cognitive control: Differences in resource allocation during updating, inhibition and switching as revealed by pupillometry</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359606</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359606</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d5">
+               <Acronym>NWO</Acronym>
+               <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+               <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d667">
+               <Acronym>BSI</Acronym>
+               <Name xml:lang="en">Behavioural Science Institute</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1241625</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1241625</Identifier>
+               <PartOf>
+                  <OrgUnit id="d51">
+                     <Name xml:lang="en">Faculty of Social Sciences</Name>
+                     <Name xml:lang="nl">Faculteit der Sociale Wetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238279</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238279</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Prof.dr. R.W. (Rob) Holland</DisplayName>
+            <Person id="d6782">
+               <PersonName>
+                  <FamilyNames>Holland</FamilyNames>
+                  <FirstNames>R.W. (Rob)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1269218</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1269218</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 9651 3806</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/202163954</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d4335">
+                  <Name xml:lang="en">Department of Social and Cultural Psychology</Name>
+                  <Name xml:lang="nl">Leerstoelgroep Sociale en Cultuurpsychologie</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237481</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237481</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d51"/>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+            <Affiliation>
+               <OrgUnit id="d667"/>
+            </Affiliation>
+            <Affiliation>
+               <OrgUnit id="d6783">
+                  <Name xml:lang="en">Group of Social Psychology</Name>
+                  <Name xml:lang="nl">Programmagroep Sociale Psychologie</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236940</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236940</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d1930">
+                        <Name xml:lang="en">Department of Psychology</Name>
+                        <Name xml:lang="nl">Afdeling Psychologie</Name>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238509</Identifier>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238509</Identifier>
+                        <PartOf>
+                           <OrgUnit id="d677">
+                              <Name xml:lang="en">Faculty of Social and Behavioural Sciences</Name>
+                              <Name xml:lang="nl">Faculteit der Maatschappij- en Gedragswetenschappen</Name>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1239094</Identifier>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1239094</Identifier>
+                              <PartOf>
+                                 <OrgUnit id="d208">
+                                    <Acronym>UvA</Acronym>
+                                    <Name xml:lang="en">University of Amsterdam</Name>
+                                    <Name xml:lang="nl">Universiteit van Amsterdam</Name>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238527</Identifier>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238527</Identifier>
+                                 </OrgUnit>
+                              </PartOf>
+                           </OrgUnit>
+                        </PartOf>
+                     </OrgUnit>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+   </Project>
+</FundingAwardNotice>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359972 -->
+   <Project id="d25979"><!-- RU-secretariat -->
+      <Title xml:lang="en">Constructing Organizational Legitimacy: Investigating the Influence of Mass Self-Communication</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359972</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359972</Identifier>
+      <StartDate>2015-01-01</StartDate>
+      <EndDate>2019-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d5">
+               <Acronym>NWO</Acronym>
+               <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+               <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d59">
+               <Name xml:lang="en">Department of Business Administration</Name>
+               <Name xml:lang="nl">Sectie Bedrijfskunde</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237250</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237250</Identifier>
+               <PartOf>
+                  <OrgUnit id="d61">
+                     <Name xml:lang="en">Nijmegen School of Management</Name>
+                     <Name xml:lang="nl">Faculteit der Managementwetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238552</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238552</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d11">
+                           <Acronym>RU</Acronym>
+                           <Name xml:lang="en">Radboud University Nijmegen</Name>
+                           <Name xml:lang="nl">Radboud Universiteit Nijmegen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236841</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236841</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+         <Collaboration>
+            <OrgUnit id="d25981">
+               <Acronym>Stenden</Acronym>
+               <Name xml:lang="en">Stenden University of Applied Sciences</Name>
+               <Name xml:lang="nl">Stenden hogeschool</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1243907</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1243907</Identifier>
+            </OrgUnit>
+         </Collaboration>
+      </Consortium>
+      <Team>
+         <Supervisor>
+            <DisplayName>Prof.dr. J.J. (Jan) Jonker</DisplayName>
+            <Person id="d12672">
+               <PersonName>
+                  <FamilyNames>Jonker</FamilyNames>
+                  <FirstNames>J.J. (Jan)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1298325</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1298325</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 2277 5841</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/079484409</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d59"/>
+            </Affiliation>
+         </Supervisor>
+         <DoctoralStudent>
+            <DisplayName>D. (Deike) Schulz (MSc)</DisplayName>
+            <Person id="d25985">
+               <PersonName>
+                  <FamilyNames>Schulz</FamilyNames>
+                  <FirstNames>D. (Deike)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1333751</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1333751</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d25981"/>
+            </Affiliation>
+         </DoctoralStudent>
+      </Team>
+      <Abstract xml:lang="en">Companies use different strategies to construct organizational legitimacy and overcome information asymmetry. However, they often rely on traditional media, such as annual report disclosure or press releases, to construct organizational legitimacy. In contrast, external stakeholders start to contribute to organizational legitimacy via mass self-communication. For example, consumers use online social network sites for collaborative interaction through the production of product reviews via YouTube, the verification of information via blogs, Facebook groups and Wikis, and the discussion of organizational topics through blogs, Facebook and Twitter. The aim of the study is to contribute to the development of theory on organizational legitimacy by analysing the influence of mass self-communication on the construction of organizational legitimacy in the German natural cosmetic industry.</Abstract>
+   </Project>
+</FundingAwardNotice>

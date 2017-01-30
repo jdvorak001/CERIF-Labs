@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1360133 -->
+   <Project id="d26032"><!-- UU-secretariat -->
+      <Title xml:lang="en">The elusive search for sustainable high seas fisheries: The role of the future regime for global oceans governance</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1360133</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360133</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2020-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d5">
+               <Acronym>NWO</Acronym>
+               <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+               <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d1803">
+               <Acronym>UCWOSL</Acronym>
+               <Name xml:lang="en">Utrecht Centre for Water, Oceans and Sustainability Law</Name>
+               <Name xml:lang="nl">Utrecht Centre for Water, Oceans and Sustainability Law (v/h NILOS)</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237218</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237218</Identifier>
+               <PartOf>
+                  <OrgUnit id="d1092">
+                     <Acronym>IER</Acronym>
+                     <Name xml:lang="en">Department of International and European Law</Name>
+                     <Name xml:lang="nl">Afdeling Internationaal en Europees Recht</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235801</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235801</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d244">
+                           <Name xml:lang="en">Utrecht School of Law</Name>
+                           <Name xml:lang="nl">Departement Rechtsgeleerdheid</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237214</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237214</Identifier>
+                           <PartOf>
+                              <OrgUnit id="d218">
+                                 <Name xml:lang="en">Faculty of Law, Economics and Governance</Name>
+                                 <Name xml:lang="nl">Faculteit Recht, Economie, Bestuur en Organisatie - REBO</Name>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242164</Identifier>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242164</Identifier>
+                                 <PartOf>
+                                    <OrgUnit id="d71">
+                                       <Acronym>UU</Acronym>
+                                       <Name xml:lang="en">Utrecht University</Name>
+                                       <Name xml:lang="nl">Universiteit Utrecht</Name>
+                                       <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                                       <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                                    </OrgUnit>
+                                 </PartOf>
+                              </OrgUnit>
+                           </PartOf>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <Supervisor>
+            <DisplayName>Prof.dr. A.G. (Alex) Oude Elferink</DisplayName>
+            <Person id="d4291">
+               <PersonName>
+                  <FamilyNames>Oude Elferink</FamilyNames>
+                  <FirstNames>A.G. (Alex)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1274911</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1274911</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 1695 8465</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/090439309</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1803"/>
+            </Affiliation>
+         </Supervisor>
+         <DoctoralStudent>
+            <DisplayName>C. Blanchard (LL.M.)</DisplayName>
+            <Person id="d26036">
+               <PersonName>
+                  <FamilyNames>Blanchard</FamilyNames>
+                  <FirstNames>C.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1334045</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1334045</Identifier>
+            </Person>
+         </DoctoralStudent>
+      </Team>
+      <Abstract xml:lang="en">High seas fisheries are part of the human activities impacting on the marine biodiversity and ecosystems in areas beyond national jurisdiction (highs seas and deep seabed), and the current intergovernmental negotiations on conservation and sustainable use of biodiversity in these areas reflect an interest in governance alternatives for their management. Indeed, the current regime of international fisheries law is not satisfactorily taking into account the impact of fishing activities on the wider marine environment. The Research therefore suggests exploring the impact of an integrated oceans governance approach on the sectoral and species-oriented regime of international fisheries.</Abstract>
+   </Project>
+</FundingAwardNotice>

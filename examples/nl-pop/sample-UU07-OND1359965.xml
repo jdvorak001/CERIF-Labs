@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359965 -->
+   <Project id="d25974"><!-- UU-secretariat -->
+      <Title xml:lang="en">De eerste minister in de Republiek (NL)</Title>
+      <Title xml:lang="nl">De eerste minister in de Republiek</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359965</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359965</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2020-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d5">
+               <Acronym>NWO</Acronym>
+               <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+               <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d1448">
+               <Name xml:lang="en">Department of History and Art History</Name>
+               <Name xml:lang="nl">Departement Geschiedenis en Kunstgeschiedenis</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242772</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242772</Identifier>
+               <PartOf>
+                  <OrgUnit id="d196">
+                     <Name xml:lang="en">Faculty of Humanities</Name>
+                     <Name xml:lang="nl">Faculteit Geesteswetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242119</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242119</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d71">
+                           <Acronym>UU</Acronym>
+                           <Name xml:lang="en">Utrecht University</Name>
+                           <Name xml:lang="nl">Universiteit Utrecht</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <Supervisor>
+            <DisplayName>Prof.dr. M.R. (Maarten) Prak</DisplayName>
+            <Person id="d1465">
+               <PersonName>
+                  <FamilyNames>Prak</FamilyNames>
+                  <FirstNames>M.R. (Maarten)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1237353</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1237353</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 2096 2627</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/071562354</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d1448"/>
+            </Affiliation>
+         </Supervisor>
+         <DoctoralStudent>
+            <DisplayName>Drs. J.H.F. (Jaap) de Haan</DisplayName>
+            <Person id="d25978">
+               <PersonName>
+                  <FamilyNames>Haan</FamilyNames>
+                  <FirstNames>J.H.F. (Jaap)</FirstNames>
+                  <OtherNames>de</OtherNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1333732</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1333732</Identifier>
+            </Person>
+         </DoctoralStudent>
+      </Team>
+   </Project>
+</FundingAwardNotice>

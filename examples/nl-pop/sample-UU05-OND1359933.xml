@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359933 -->
+   <Project id="d25963"><!-- UU-secretariat -->
+      <Title xml:lang="en">Control of cytoskeletal organization and cell movement by microtubule minus-end binding proteins.</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359933</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359933</Identifier>
+      <StartDate>2015-01-01</StartDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d2937">
+               <Acronym>NWO-ALW</Acronym>
+               <Name xml:lang="en">NWO Council for Earth and Life Sciences</Name>
+               <Name xml:lang="nl">NWO Aard- en Levenswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1234995</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1234995</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d7254">
+               <Name xml:lang="en">Department of Cell Biology</Name>
+               <Name xml:lang="nl">Disciplinegroep Celbiologie</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1241910</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1241910</Identifier>
+               <PartOf>
+                  <OrgUnit id="d67">
+                     <Name xml:lang="en">Department of Biology</Name>
+                     <Name xml:lang="nl">Departement Biologie</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237725</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237725</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d69">
+                           <Name xml:lang="en">Faculty of Science</Name>
+                           <Name xml:lang="nl">Faculteit Bètawetenschappen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242136</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242136</Identifier>
+                           <PartOf>
+                              <OrgUnit id="d71">
+                                 <Acronym>UU</Acronym>
+                                 <Name xml:lang="en">Utrecht University</Name>
+                                 <Name xml:lang="nl">Universiteit Utrecht</Name>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                              </OrgUnit>
+                           </PartOf>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Prof.dr. A.S. (Anna) Akhmanova</DisplayName>
+            <Person id="d19903">
+               <PersonName>
+                  <FamilyNames>Akhmanova</FamilyNames>
+                  <FirstNames>A.S. (Anna)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1302028</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1302028</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 9099 6464</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/156410591</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d7254"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">Microtubule cytoskeleton is essential for intracellular transport, cell division and morphogenesis. Microtubules are polarized tubes with two distinct ends, the plus-end, which in cells can rapidly grow and shrink, and the minus-end, which is typically much less dynamic. While a wealth of information exists on the microtubule plus-ends, the mechanisms controlling the dynamics and function of microtubule minus-ends are still poorly understood. Recent studies, including our own, showed that the members of CAMSAP/Nezha/Patronin family specifically decorate and stabilize free microtubule minus-ends. Here, we propose to combine experiments in cells and in vitro to get insight in the mechanisms and function of CAMSAP-dependent microtubule stabilization. We have found that CAMSAP depletion leads to the loss of non-centrosomal microtubules, including Golgi-associated ones, as well as defects in cell migration. We will investigate the connection between CAMSAPs and the Golgi apparatus and examine how CAMSAP-stabilized non-centrosomal microtubules contribute to cell motility. Using advanced in vitro reconstitution experiments, we will also investigate how CAMSAP-stabilized microtubule stretches are formed and how they are affected by drugs used in cancer chemotherapy. Further, we have shown that microtubule-severing protein katanin serves as a negative regulator of CAMSAP-mediated microtubule minus-end stabilization. We will address the impact of the CAMSAP-katanin interplay in cells and reconstitute this process in vitro to investigate the underlying mechanism. Taken together, our studies will provide insight into what currently represents one of the least understood areas of cytoskeletal organization ? control of microtubule minus-end behavior and function.</Abstract>
+   </Project>
+</FundingAwardNotice>

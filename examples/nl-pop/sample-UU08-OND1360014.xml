@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1360014 -->
+   <Project id="d25993"><!-- UU-secretariat -->
+      <Title xml:lang="en">Labor Markets in the Digital Age: Impacts and Attitudes</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1360014</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360014</Identifier>
+      <StartDate>2016-01-01</StartDate>
+      <EndDate>2020-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3051">
+               <Acronym>NWO-MaGW</Acronym>
+               <Name xml:lang="en">NWO Social Sciences Research Council</Name>
+               <Name xml:lang="nl">NWO Maatschappij- en Gedragswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235002</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235002</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d516">
+               <Name xml:lang="en">Utrecht School of Economics - USE</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1240239</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1240239</Identifier>
+               <PartOf>
+                  <OrgUnit id="d218">
+                     <Name xml:lang="en">Faculty of Law, Economics and Governance</Name>
+                     <Name xml:lang="nl">Faculteit Recht, Economie, Bestuur en Organisatie - REBO</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242164</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242164</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d71">
+                           <Acronym>UU</Acronym>
+                           <Name xml:lang="en">Utrecht University</Name>
+                           <Name xml:lang="nl">Universiteit Utrecht</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. A.M. (Anna) Salomons</DisplayName>
+            <Person id="d25996">
+               <PersonName>
+                  <FamilyNames>Salomons</FamilyNames>
+                  <FirstNames>A.M. (Anna)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1332771</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1332771</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 9619 194X</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/338041575</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d516"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">There is a public debate on the labor market effects of new digital technologies, in popular books [14, 31] and other media. For example, on a recent cover, The Economist depicts technology as a tornado tearing through a workplace with the warning "Coming to an office near you..." [39]. Furthermore, in a 2014 speech, the Dutch Minister of Social Affairs and Employment expressed concern that technological progress increases labor market inequality and is putting middle class jobs under pressure [2]. This debate underscores the issue's prime societal relevance. The labor market impacts of technological progress are also a central research topic for economists. Most labor market models have exclusively assumed that new technologies favor skilled workers. However, from an emerging literature it is becoming clear that such models fall short in explaining important changes that have been documented in advanced economies' job and wage structures [1]. The key insight from this new literature is that the specific comparative advantage of workers versus technology in job tasks should be accounted for [8]. This has significant consequences for our understanding of the labor market impact of digital innovation, which are only beginning to be explored. Building on my top-tier publications in this area [25, 26], this research will be the first to investigate the impact of the Digital Revolution on the job, wage, and output price structures in a unified and mathematically tractable framework. This framework will be tested empirically across 15 developed economies. Furthermore, using historical data, the labor market impacts of the current Digital Revolution will be compared to those resulting from previous episodes of technological progress. Lastly, I am part of an international interdisciplinary network on these issues, which helps disseminate my research findings. For example, I have established collaboration with robotics scientists and policymakers; and I will continue contributing to the public debate in the media.</Abstract>
+   </Project>
+</FundingAwardNotice>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359878 -->
+   <Project id="d25949"><!-- UU-secretariat -->
+      <Title xml:lang="en">Reconstruction of temperature and sealevel</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359878</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359878</Identifier>
+      <StartDate>2015-01-01</StartDate>
+      <EndDate>2016-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3393">
+               <Acronym>NWO-EW</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Exacte Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235000</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235000</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d4054">
+               <Acronym>IMAU</Acronym>
+               <Name xml:lang="en">Institute for Marine and Atmospheric Research Utrecht</Name>
+               <Name xml:lang="nl">Instituut voor Marien en Atmosferisch Onderzoek</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238533</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238533</Identifier>
+               <PartOf>
+                  <OrgUnit id="d422">
+                     <Name xml:lang="en">Department of Physics and Astronomy</Name>
+                     <Name xml:lang="nl">Departement Natuur- en Sterrenkunde</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237729</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237729</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d69">
+                           <Name xml:lang="en">Faculty of Science</Name>
+                           <Name xml:lang="nl">Faculteit Bètawetenschappen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242136</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242136</Identifier>
+                           <PartOf>
+                              <OrgUnit id="d71">
+                                 <Acronym>UU</Acronym>
+                                 <Name xml:lang="en">Utrecht University</Name>
+                                 <Name xml:lang="nl">Universiteit Utrecht</Name>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                              </OrgUnit>
+                           </PartOf>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. R.S.W. van de Wal</DisplayName>
+            <Person id="d7448">
+               <PersonName>
+                  <FamilyNames>Wal</FamilyNames>
+                  <FirstNames>R.S.W.</FirstNames>
+                  <OtherNames>van de</OtherNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1249421</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1249421</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0003 8821 7396</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/101899556</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d4054"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Abstract xml:lang="en">The project concerns coupling the climate model of intermediate complexity CLIMBER-2 (CLIM) to a 3D thermodynamic ice-sheet model (ISM) previously designed by our group called IMAU-ICE. This ice-sheet model describes the ice flow of four major ice sheets (on Antarctica, Greenland, Eurasia and North America). For the coupling we will use the mapping method OBLIMAP. Our main goal is to understand and quantify the interaction between large scale climate and ice sheets on geological timescales (~10 thousands to millions of years). To achieve this, we will compare coupled to uncoupled runs of the climate model and of the ice sheet model. The interaction between ice sheets and climate is mostly set by albedo and surface height changes. We will quantify these effects separately, as well as the combination of the two. Furthermore, we will assess the sensitivity to various parameters concerning the mass balance of the ice sheets and the influence of ocean temperatures on ice shelf melting. CO2 will be reconstructed by an inverse routine that calculates CO2 from benthic d18O variations. This routine is already implemented and operates in simplified climate models. The ice sheet model is also coupled to a sea level equation model (SLE) called SELEN. The SLE simulates regional sea level variations. These influence the growth and decay of marine ice-sheets significantly. By comparing coupled to uncoupled runs we can quantify this influence</Abstract>
+   </Project>
+</FundingAwardNotice>
