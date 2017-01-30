@@ -8,7 +8,8 @@
 
 	<!-- Imports -->
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd"/>
-
+	<xs:import namespace="urn:xmlns:nl:pop-project:vocab:Subjects#" schemaLocation="./subjects.xsd"/>
+	
 	<xs:element name="ProjectProposal">
 		<xs:complexType>
 			<xs:sequence>
@@ -153,21 +154,23 @@
 						<xs:element minOccurs="0" name="Team">
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="PrincipalInvestigator" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
-									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
-									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="DoctoralStudent" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
-									<xs:element cflink:link="cfProj_Pers" cfprocess:expandBy="cfProj_Pers(http://eurocris.org/cerif/vocab/PersonProjectEngagements#)" maxOccurs="unbounded" minOccurs="0" name="Researcher" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="PrincipalInvestigator" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="Contact" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="Researcher" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="Supervisor" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="CoSupervisor" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
+									<xs:element cflink:link="cfProj_Pers" maxOccurs="unbounded" minOccurs="0" name="DoctoralStudent" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type"/>
 								</xs:sequence>
 							</xs:complexType>
 						</xs:element>
 						
+						<xs:element ref="a:Subject" xmlns:a="urn:xmlns:nl:pop-project:vocab:Subjects#" minOccurs="0" maxOccurs="unbounded"/>
+						
 						<xs:element cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Subject)" maxOccurs="unbounded" minOccurs="0" name="Subject" type="cfGenericClassification__Type"/>
-<!-- any 
-							class scheme of the 'subject' character -->
 
 						<xs:element cflink:attribute="cfProjKeyw.cfKeyw" maxOccurs="unbounded" minOccurs="0" name="Keyword" type="cfMLangString__Type"/>
 
-						<xs:element cflink:attribute="cfProjAbstr.cfAbstr" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangString__Type"/>
+						<xs:element cflink:attribute="cfProjAbstr.cfAbstr" maxOccurs="unbounded" minOccurs="0" name="Abstract" type="cfMLangAnyMixed__Type"/>
 
 						<xs:element cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Status)" maxOccurs="unbounded" minOccurs="0" name="Status" type="cfGenericClassification__Type"/>
 <!-- any 
@@ -242,6 +245,14 @@
 			<xs:maxLength value="128"/>
 		</xs:restriction>
 	</xs:simpleType>
+
+	<xs:complexType name="cfMLangAnyMixed__Type" mixed="true">
+		<xs:sequence>
+			<xs:any namespace="##any" processContents="lax" minOccurs="0" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute ref="xml:lang" use="required"/>
+		<xs:attribute default="o" name="trans" type="cfTrans__Type" use="optional"/>
+	</xs:complexType>
 
 	<xs:complexType name="cfMLangString__Type">
 		<xs:simpleContent>
