@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project default="validate">
+
+	<target name="cerify">
+		<xslt style="scripts/narcis2nlcerif.xslt" failonerror="true" destDir="cerif1" baseDir="narcis/www.narcis.nl/research/RecordID" includes="OND*/Language/en.xml">
+			<mapper>
+				<globmapper from="*/Language/en.xml" to="*.xml" />
+			</mapper>
+		</xslt>
+		<xslt style="scripts/normalize-nlcerif.xslt" failonerror="true" destDir="cerif" baseDir="cerif1" includes="OND*.xml" extension=".xml" />
+		<schemavalidate failonerror="true">
+			<schema namespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" file="schemas/p-o-p-profile-schema.xsd" />
+			<fileset dir="cerif" includes="**/*.xml" />
+		</schemavalidate>
+	</target>
+
+	<target name="validate">
+		<schemavalidate failonerror="true" fullchecking="true" warn="true">
+			<schema namespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" file="schemas/p-o-p-profile-schema.xsd" />
+			<fileset dir="." includes="sample*.xml" />
+		</schemavalidate>
+	</target>
+
+	<target name="subjects2xs">
+		<tstamp>
+			<format property="TODAY" pattern="yyyy-MM-dd" />
+		</tstamp>
+		<xslt style="scripts/subjectcat2xs.xslt" failonerror="true" in="narcis/www.narcis.nl/drilldownitems/coll/organisation/Language/en/ddall/dd_cat.xml" out="schemas/subjects.xsd">
+			<param name="today" expression="${TODAY}" />
+		</xslt>
+		<schemavalidate failonerror="true" disableDTD="true" fullchecking="true" warn="true" file="schemas/subjects.xsd">
+			<schema namespace="urn:xmlns:org:eurocris:cerif-1.6-2" url="http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.6/CERIF_1.6_2.xsd" />
+			<schema namespace="http://www.w3.org/2001/XMLSchema" file="schemas/XMLSchema.xsd" />
+		</schemavalidate>
+	</target>
+
+</project>
