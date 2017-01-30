@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="http://eurocris.org/cerif/annotations#" elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en">
+
+	<xs:annotation>
+		<xs:documentation>Links to the CERIF data model</xs:documentation>
+	</xs:annotation>
+
+	<xs:attribute name="entity" type="xs:int">
+		<xs:annotation>
+			<xs:documentation>Reference to the entity in the CERIF data model using the physical name</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+
+	<xs:attribute name="attribute" type="xs:string">
+		<xs:annotation>
+			<xs:documentation>Reference to the attribute in the CERIF data model using the physical name of the entity concatenated with a dot and the physical name of the attribute</xs:documentation>
+		</xs:annotation>
+	</xs:attribute>
+
+</xs:schema>
