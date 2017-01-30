@@ -4,10 +4,9 @@
 	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL">
 
 	<xs:annotation>
-		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.
+		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) profile for the P-O-P project in the Netherlands.
 			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
-			For more information about CERIF and euroCRIS see http://www.eurocris.org/.
-		</xs:documentation>
+			For more information about CERIF and euroCRIS see http://www.eurocris.org/.</xs:documentation>
 	</xs:annotation>
 
 	<xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="xml.xsd">
