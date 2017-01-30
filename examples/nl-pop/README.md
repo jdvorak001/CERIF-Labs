@@ -83,13 +83,17 @@ The persons and orgunits shall be matched.
 For your staff and organisational structure, you are holding the master data already, so don't update.
 For other instutions' staff and orgunits, you may choose to update the information you are having, but you should probably be careful.
 
+Of course, you should only accept valid information.
+
 ### Usage notes for producers of the POP CERIF information
 
 Include as many identifiers in the information as you can reliably provide. 
 That will make information matching easier at the institutions.
 Take care to update your information on the organisational structure of the involved institutions – use the information from the project proposals, or (better yet), have an independent channel for following changes in the organisational structure of institutions you fund regularly.
 
-### Usage notes for maintainers of the profile
+Make sure you validate all information you produce. Monitor and try to resolve any issues you see or receive reports of.
+
+### Usage notes for maintainers of the profiles
 
 The profile is rather flexible, it allows extensions of the semantic vocabularies. 
 Please keep the `urn:xmlns:nl:pop-project:vocab:` prefix for the types, roles, statuses.
