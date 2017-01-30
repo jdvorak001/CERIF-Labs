@@ -9,7 +9,7 @@
 
 	<xsl:template match="/">
 
-<FundingAwardNotice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema2.xsd urn:xmlns:nl:pop-project:vocab:Subjects# ../schemas/subjects.xsd">
+<FundingAwardNotice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
 	<xsl:text>
    </xsl:text>
 	<xsl:comment> A fictitious project funding award notice based on a real-world project, see <xsl:value-of select="$url"/><xsl:text> </xsl:text></xsl:comment>
