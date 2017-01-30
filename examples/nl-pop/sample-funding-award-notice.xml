@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!-- A fictitious project proposal funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1336115 -->
-<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
+<!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1336115 -->
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema2.xsd">
 	<Project id="13045b7f-ceb0-4a3f-a82d-82c19e1994e7">
 		<Title xml:lang="en">Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia</Title>
+		<Identifier type="http://openaire.eu/cerif/vocab/IdentifierTypes#ReferenceNumber">OND1336115</Identifier>
 		<StartDate>2010-01-01</StartDate>
 		<EndDate>2015-11-30</EndDate>
 		<Funders>
@@ -11,7 +12,7 @@
 					<Acronym>NWO</Acronym>
 					<Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
 					<Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
-					<FundRefId>http://dx.doi.org/10.13039/501100003246</FundRefId>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
 				</OrgUnit>
 			</Funder>
 		</Funders>
@@ -30,7 +31,7 @@
 									<Acronym>UU</Acronym>
 									<Name xml:lang="en">Utrecht University</Name>
 									<Name xml:lang="nl">Universiteit Utrecht</Name>
-									<GridId>grid.5477.1</GridId>
+									<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#GridId">grid.5477.1</Identifier>
 								</OrgUnit>
 							</PartOf>
 						</OrgUnit>
@@ -47,7 +48,7 @@
 							<Acronym>UvA</Acronym>
 							<Name xml:lang="en">University of Amsterdam</Name>
 							<Name xml:lang="nl">Universiteit van Amsterdam</Name>
-							<GridId>grid.7177.6</GridId>
+							<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">grid.7177.6</Identifier>
 						</OrgUnit>
 					</PartOf>
 				</OrgUnit>
@@ -60,8 +61,8 @@
 						<FamilyNames>Arps</FamilyNames>
 						<FirstNames>Ben</FirstNames>
 					</PersonName>
-					<DAI>info:eu-repo/dai/nl/071283447</DAI>
-					<ISNI>0000 0000 7956 1652</ISNI>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/071283447</Identifier>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 7956 1652</Identifier>
 				</Person>
 				<Affiliation>
 					<OrgUnit id="510f3c48-3971-4abe-8a70-992fec7d0327">
@@ -80,7 +81,7 @@
 												<Acronym>UL</Acronym>
 												<Name xml:lang="en">Leiden University</Name>
 												<Name xml:lang="nl">Universiteit Leiden</Name>
-												<GridId>grid.5132.5</GridId>
+												<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">grid.5132.5</Identifier>
 											</OrgUnit>
 										</PartOf>
 									</OrgUnit>
@@ -96,8 +97,8 @@
 						<FamilyNames>Müller</FamilyNames>
 						<FirstNames>Eggo</FirstNames>
 					</PersonName>
-					<DAI>info:eu-repo/dai/nl/296304654</DAI>
-					<ISNI>0000 0001 1933 0569</ISNI>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/296304654</Identifier>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 1933 0569</Identifier>
 				</Person>
 				<Affiliation>
 					<OrgUnit id="891f3ec0-454f-4fee-988d-91b4661335f9">
@@ -115,8 +116,8 @@
 						<FamilyNames>Uricchio</FamilyNames>
 						<FirstNames>W.C.</FirstNames>
 					</PersonName>
-					<DAI>info:eu-repo/dai/nl/099912821</DAI>
-					<ISNI>0000 0000 3915 6812</ISNI>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/099912821</Identifier>
+					<Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 3915 6812</Identifier>
 				</Person>
 				<Affiliation>
 					<OrgUnit id="891f3ec0-454f-4fee-988d-91b4661335f9" />
@@ -131,21 +132,19 @@
 				</Person>
 			</DoctoralStudent>
 		</Team>
-		<Abstract xml:lang="en"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
-		<Abstract xml:lang="nl"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
 		<Costs><!-- Note: fictitious amounts in a real structure -->
 			<Cost>
 				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48">
-					<Amount currency="EUR">12</Amount>
 					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectTotalEligibleCosts</Type>
 					<Name xml:lang="en">Total eligible costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia"</Name>
+					<Amount currency="EUR">12</Amount>
 				</Funding>
 			</Cost>
 			<Cost>
 				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf">
-					<Amount currency="EUR">6</Amount>
 					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectCostsCoveredByFunder</Type>
 					<Name xml:lang="en">The costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia" covered by the funding from NWO</Name>
+					<Amount currency="EUR">6</Amount>
 					<CoveredBy>
 						<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
 							<Acronym>NWO</Acronym>
@@ -213,5 +212,7 @@
 				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf" />
 			</Cost>
 		</Costs>
+		<Abstract xml:lang="en"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
+		<Abstract xml:lang="nl"><!-- Note: too long for the sake of example. See http://www.narcis.nl/research/RecordID/OND1336115 --></Abstract>
 	</Project>
 </FundingAwardNotice>
