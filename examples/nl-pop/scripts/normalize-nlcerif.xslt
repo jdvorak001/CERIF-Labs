@@ -10,6 +10,20 @@
 		</xsl:copy>
 	</xsl:template>
 
+	<xsl:template match="Project">
+		<xsl:copy>
+			<xsl:apply-templates select="@*" />
+			<xsl:comment>
+				<xsl:for-each select="Consortium/*/descendant::OrgUnit[Identifier='ORG1236847' or Identifier='ORG1236841']">
+					<xsl:text> </xsl:text>
+					<xsl:value-of select="Acronym"/>-<xsl:value-of select="lower-case( local-name( ancestor-or-self::OrgUnit[position()=last()]/parent::* ) )"/>
+					<xsl:text> </xsl:text>
+				</xsl:for-each>
+			</xsl:comment>
+			<xsl:apply-templates />
+		</xsl:copy>	
+	</xsl:template>
+
 	<xsl:template match="OrgUnit">
 		<xsl:copy>
 			<xsl:apply-templates select="@*" />
