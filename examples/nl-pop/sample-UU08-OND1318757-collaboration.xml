@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema2.xsd urn:xmlns:nl:pop-project:vocab:Subjects# ../schemas/subjects.xsd">
+   <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1318757 -->
+   <Project id="d13416">
+      <Title xml:lang="en">Agent-mediated Business Coordination</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1318757</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1318757</Identifier>
+      <StartDate>2006-01-01</StartDate>
+      <EndDate>2012-12-31</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="d3051">
+               <Acronym>NWO-MaGW</Acronym>
+               <Name xml:lang="en">NWO Social Sciences Research Council</Name>
+               <Name xml:lang="nl">NWO Maatschappij- en Gedragswetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235002</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235002</Identifier>
+               <PartOf>
+                  <OrgUnit id="d5">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="d13418">
+               <Name xml:lang="en">Department Informatiemanagement abolished</Name>
+               <Name xml:lang="nl">Department Informatiemanagement opgeheven</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235606</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235606</Identifier>
+               <PartOf>
+                  <OrgUnit id="d2648">
+                     <Name xml:lang="en">Tilburg School of Economics and Management</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237762</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237762</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d226">
+                           <Acronym>TiU</Acronym>
+                           <Name xml:lang="en">Tilburg University</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236840</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236840</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+         <Collaboration>
+            <OrgUnit id="d2634">
+               <Name xml:lang="en">Department of Information and Computing Sciences</Name>
+               <Name xml:lang="nl">Departement Informatica</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235802</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235802</Identifier>
+               <PartOf>
+                  <OrgUnit id="d69">
+                     <Name xml:lang="en">Faculty of Science</Name>
+                     <Name xml:lang="nl">Faculteit Bètawetenschappen</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242136</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242136</Identifier>
+                     <PartOf>
+                        <OrgUnit id="d71">
+                           <Acronym>UU</Acronym>
+                           <Name xml:lang="en">Utrecht University</Name>
+                           <Name xml:lang="nl">Universiteit Utrecht</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Collaboration>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. H. Weigand</DisplayName>
+            <Person id="d2645">
+               <PersonName>
+                  <FamilyNames>Weigand</FamilyNames>
+                  <FirstNames>H.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1242793</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1242793</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0000 8302 9191</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/073164542</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d2646">
+                  <Name xml:lang="en">Department of Management</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1239056</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1239056</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d2648"/>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </PrincipalInvestigator>
+         <Researcher>
+            <DisplayName>Dr. F.P.M. Dignum</DisplayName>
+            <Person id="d2643">
+               <PersonName>
+                  <FamilyNames>Dignum</FamilyNames>
+                  <FirstNames>F.P.M.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1277051</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1277051</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 2101 3677</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/07241989X</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d2634"/>
+            </Affiliation>
+         </Researcher>
+         <Researcher>
+            <DisplayName>Dr. M.V. Dignum</DisplayName>
+            <Person id="d2651">
+               <PersonName>
+                  <FamilyNames>Dignum</FamilyNames>
+                  <FirstNames>M.V.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1282976</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1282976</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isni">0000 0001 1466 5247</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/074582569</Identifier>
+            </Person>
+            <Affiliation>
+               <OrgUnit id="d2652">
+                  <Name xml:lang="en">Section of Information and Communication Technology</Name>
+                  <Name xml:lang="nl">Sectie Informatie en Communicatie Technologie</Name>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1238213</Identifier>
+                  <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1238213</Identifier>
+                  <PartOf>
+                     <OrgUnit id="d2654">
+                        <Name xml:lang="en">Department of Infrastructure Systems &amp; Services</Name>
+                        <Name xml:lang="nl">Afdeling Infrastructure Systems &amp; Services</Name>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1239192</Identifier>
+                        <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1239192</Identifier>
+                        <PartOf>
+                           <OrgUnit id="d2656">
+                              <Name xml:lang="en">Faculty of Policy, Technology and Management</Name>
+                              <Name xml:lang="nl">Faculteit Techniek, Bestuur en Management</Name>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237769</Identifier>
+                              <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237769</Identifier>
+                              <PartOf>
+                                 <OrgUnit id="d414">
+                                    <Acronym>TUD</Acronym>
+                                    <Name xml:lang="en">Delft University of Technology</Name>
+                                    <Name xml:lang="nl">Technische Universiteit Delft</Name>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236849</Identifier>
+                                    <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236849</Identifier>
+                                 </OrgUnit>
+                              </PartOf>
+                           </OrgUnit>
+                        </PartOf>
+                     </OrgUnit>
+                  </PartOf>
+               </OrgUnit>
+            </Affiliation>
+         </Researcher>
+         <Researcher>
+            <DisplayName>Drs. J. Jayasinghe Arachchig</DisplayName>
+            <Person id="d13423">
+               <PersonName>
+                  <FamilyNames>Jayasinghe Arachchig</FamilyNames>
+                  <FirstNames>J.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1324826</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1324826</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/327778350</Identifier>
+            </Person>
+         </Researcher>
+         <Researcher>
+            <DisplayName>Drs. B. Rensmann</DisplayName>
+            <Person id="d13425">
+               <PersonName>
+                  <FamilyNames>Rensmann</FamilyNames>
+                  <FirstNames>B.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1315871</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1315871</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/314490124</Identifier>
+            </Person>
+         </Researcher>
+         <Researcher>
+            <DisplayName>Z. Zheng</DisplayName>
+            <Person id="d13427">
+               <PersonName>
+                  <FamilyNames>Zheng</FamilyNames>
+                  <FirstNames>Z.</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1309912</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1309912</Identifier>
+            </Person>
+         </Researcher>
+      </Team>
+      <Subject xmlns="urn:xmlns:nl:pop-project:vocab:Subjects#">D16000</Subject>
+      <Abstract xml:lang="en">Business Process Integration within organizations and across organizations is a highly relevant topic. Current industrial solutions are suffering from a lack of abstraction and have difficulties in hardly any method in which the economic decision-making and the technical design are aligned. One decision process in which this integration of economic and technical issues is needed has to do with the choice of the type of mediators, adapters. What is their role, when do they have an added value, and how can this value be realized in a cooperative game situation? The research proposed here aims to develop such a decision process based solidly on an interdisciplinary theory of coordination. This is done by means of empirical research on actual business integration projects, literature surveys (economic, organizational and computer science), and experimental research in a software agent test bed. The advantage of the agent paradigm is that it offers a high level of abstraction (such as goals and ontologies), fits well with the reality of independent autonomous parties in business, and is quite suitable for studying mechanisms of self-adaptation.</Abstract>
+   </Project>
+</FundingAwardNotice>

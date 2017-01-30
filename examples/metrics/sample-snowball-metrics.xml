@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- A fictitious institution's sample Snowball metrics set -->
+<SnowballMetricPublication xmlns="urn:xmlns:org:com.snowballmetrics.cerif-profile-1.0-EXPERIMENTAL">
+	<OrgUnit id="5feee404-de75-4cbd-917d-644743a807bb">
+		<Acronym>UoEx</Acronym>
+		<Name xml:lang="en">University of Exampleton</Name>
+		<Indicators>
+			<OutputMetrics>
+				<ScholarlyOutput>
+					<NumberOfOutputs>
+						<Period>2015</Period>
+						<Discipline>https://www.hesa.ac.uk/collection/c16041/a/accentre/#102</Discipline>
+						<Value>42</Value>
+						<!-- TODO data source, data currency -->
+					</NumberOfOutputs>
+					<NumberOfOutputsPerFTE>
+						<Period>2015</Period>
+						<Discipline>https://www.hesa.ac.uk/collection/c16041/a/accentre/#102</Discipline>
+						<Value>1.4</Value>
+					</NumberOfOutputsPerFTE>
+				</ScholarlyOutput>
+			</OutputMetrics>
+		</Indicators>
+	</OrgUnit>
+</SnowballMetricPublication>
