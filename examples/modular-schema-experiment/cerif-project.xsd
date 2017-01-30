@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd http://eurocris.org/cerif/annotations# http://eurocris.org/cerif/xml/schemas/annotations.xsd"
+	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en">
+
+	<xs:annotation>
+		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) XXX release, developed by the euroCRIS CERIF Task Group.
+			This work is licensed under a Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/).
+			For more information about CERIF and euroCRIS see http://www.eurocris.org/.
+		</xs:documentation>
+	</xs:annotation>
+
+	<xs:include schemaLocation="cerif-core.xsd">
+		<xs:annotation>
+			<xs:documentation>Import the CERIF Core schema</xs:documentation>
+		</xs:annotation>
+	</xs:include>
+	
+	<xs:element name="Project" substitutionGroup="Individual__SubstitutionGroupHead" cflink:entity="cfProj">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfIdAttr__BaseType">
+					<xs:sequence>
+						
+						<xs:element name="Acronym" type="cfString__Type" minOccurs="0" cflink:attribute="cfProj.cfAcro">
+							<xs:annotation>
+								<xs:documentation>The acronym of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Title" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfProjTitle.cfTitle">
+							<xs:annotation>
+								<xs:documentation>The title of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Type" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Type)">
+							<xs:annotation>
+								<xs:documentation>The type of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#">
+							<xs:annotation>
+								<xs:documentation>An identifier of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						
+						<xs:element name="StartDate" type="cfDate__Type" minOccurs="0" cflink:attribute="cfProj.cfStartDate">
+							<xs:annotation>
+								<xs:documentation>The start date of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+						
+						<xs:element name="EndDate" type="cfDate__Type" minOccurs="0" cflink:attribute="cfProj.cfEndDate">
+							<xs:annotation>
+								<xs:documentation>The end date of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Funders" minOccurs="0" cflink:unorderedContainer="true">
+							<xs:annotation>
+								<xs:documentation>The funders who provide funding to the project</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="Funder" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="">
+										<xs:annotation>
+											<xs:documentation>The funder of the project</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="Consortium" minOccurs="0" cflink:unorderedContainer="true">
+							<xs:annotation>
+								<xs:documentation>The consortium of the project: the organisations (persons) who are contractually bound to do the work in the project</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:sequence cfprocess:extensionPoint="AdditionalProjectConsortiumRoles"/>
+									<xs:element name="Member" type="cfLinkWithDisplayNameToPersonOrOrgUnit__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_OrgUnit cfProj_Pers">
+										<xs:annotation>
+											<xs:documentation>A member of the project consortium</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:element name="Team" minOccurs="0" cflink:unorderedContainer="true">
+							<xs:annotation>
+								<xs:documentation>The project team: the persons who carry out the work in the project, typically as a part of their job at the organisations from the consortium</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:sequence>
+									<xs:element name="PrincipalInvestigator" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Pers">
+										<xs:annotation>
+											<xs:documentation>The principal investigator: the person responsible for the whole project, the head of the project team</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:element name="Contact" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Pers">
+										<xs:annotation>
+											<xs:documentation>A person to contact in matters connected with her/his organisations' participation in the project</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+									<xs:group ref="AdditionalProjectTeamRoles__ExtensionPointGroup"/>
+									<xs:element name="Member" type="cfLinkWithDisplayNameToPersonWithAffiliations__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Pers">
+										<xs:annotation>
+											<xs:documentation>A member of the project team</xs:documentation>
+										</xs:annotation>
+									</xs:element>
+								</xs:sequence>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:sequence cfprocess:extensionPoint="ProjectSubjectClassifications"/>
+						<xs:element name="Subject" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Subject)">
+							<xs:annotation>
+								<xs:documentation>The subject classification(s) of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Keyword" type="cfMLangString__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfProjKeyw.cfKeyw">
+							<xs:annotation>
+								<xs:documentation>The keywords of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Abstract" type="cfMLangAnyMixed__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfProjAbstr.cfAbstr">
+							<xs:annotation>
+								<xs:documentation>The abstract of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Status" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Status)">
+							<xs:annotation>
+								<xs:documentation>The status of the project</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Originator" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_ResPubl(http://eurocris.org/cerif/vocab/Project_Output_Roles#Originator)">	
+							<xs:annotation>
+								<xs:documentation>The research outputs this project has contributed to</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="ResearchOutput__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+						
+						<xs:group ref="__TheRestGroup"/>
+						
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:group name="AdditionalProjectTeamRoles__ExtensionPointGroup">
+		<xs:sequence/>
+	</xs:group>
+
+</xs:schema>
