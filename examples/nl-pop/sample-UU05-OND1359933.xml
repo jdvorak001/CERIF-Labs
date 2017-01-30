@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
                     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ../schemas/p-o-p-profile-schema.xsd">
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL ./schemas/p-o-p-profile-schema.xsd">
    <!-- A fictitious project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359933 -->
    <Project id="d25963"><!-- UU-secretariat -->
       <Title xml:lang="en">Control of cytoskeletal organization and cell movement by microtubule minus-end binding proteins.</Title>
