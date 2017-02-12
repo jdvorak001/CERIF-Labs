@@ -57,7 +57,7 @@
 							<cfTerm cfLangCode="nl" cfTrans="o">
 								<xsl:apply-templates select="$nlNode/span/a" mode="directTextOnly" />
 							</cfTerm>
-							<cfDefSrc cfLangCode="en" cfTrans="o">NARCIS</cfDefSrc>
+							<cfTermSrc cfLangCode="en" cfTrans="o">NARCIS</cfTermSrc>
 							<xsl:if test="ancestor::li">
 								<cfClass_Class>
 									<cfClassId1><xsl:value-of select="substring-after( ancestor::li[1]/span/a/@href, '../../../../../../search/coll/organisation/Language/EN/dd_cat/' )" /></cfClassId1>
