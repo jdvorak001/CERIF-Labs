@@ -45,3 +45,7 @@ Use *tidy* to clean up the XHTML and convert links:
 	# fix the translation links
 	find www.narcis.nl/drilldownitems -name dd_cat.xml | ( while read F ; do sed -e 's#/ddall/dd_cat"#/ddall/dd_cat.xml"#' $F >$F.1 && mv $F.1 $F ; done )
 
+And now transform it into a XML Schema with embedded CERIF semantic layer XML fragments:
+
+	cd ..
+	ant subjects2xs
