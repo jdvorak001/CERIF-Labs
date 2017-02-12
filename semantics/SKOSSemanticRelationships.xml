@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ClassScheme id="ede6f6d4-e009-42c5-85ab-b3b34808da39">
+	<Name xml:lang="en">SKOS semantic relations</Name>
+	<Description xml:lang="en">Semantic relations between concepts defined by the Simple Knowledge Organization System (SKOS), see https://www.w3.org/TR/skos-reference/#semantic-relations</Description>
+	
+	<Class id="385d4406-5a17-4cba-bb61-1178a6eb27aa">
+		<Term xml:lang="en">more general in meaning (explicit statement)</Term>
+		<RoleExpression xml:lang="en">has broader</RoleExpression>
+		<RoleExpressionOpposite xml:lang="en">has narrower</RoleExpressionOpposite>
+		<Definition xml:lang="en" source="https://www.w3.org/TR/skos-reference/#semantic-relations">Concept1 is in more general in meaning ("broader") than Concept2: the explicit statement.</Definition>
+		<Description xml:lang="en" source="https://www.w3.org/TR/skos-reference/#semantic-relations">To be only used to assert a direct (i.e., immediate) hierarchical link between two concepts.</Description>
+		<Identifier type="URL">http://www.w3.org/2004/02/skos/core#broader</Identifier>
+	</Class>
+	
+	<Class id="8f5467e2-0649-45be-8ec0-f3b59069bdd0">
+		<Term xml:lang="en">more general in meaning (derived transitive closure)</Term>
+		<RoleExpression xml:lang="en">has broader transitive</RoleExpression>
+		<RoleExpressionOpposite xml:lang="en">has narrower transitive</RoleExpressionOpposite>
+		<Definition xml:lang="en" source="https://www.w3.org/TR/skos-reference/#semantic-relations">Concept1 is in more general in meaning ("broader") than Concept2: the transitive closure of the explicit statements.</Definition>
+		<Description xml:lang="en" source="https://www.w3.org/TR/skos-reference/#semantic-relations">Not to be used to make assertions, use 385d4406-5a17-4cba-bb61-1178a6eb27aa instead.  This is useful for constructing and retrieving the transitive closure of the explicit assertions.</Description>
+		<Identifier type="URL">http://www.w3.org/2004/02/skos/core#broaderTransitive</Identifier>
+	</Class>
+	
+	<Class id="07dcf503-1bcf-449f-b7e2-eee99c8e631a">
+		<Term xml:lang="en">related</Term>
+		<RoleExpression xml:lang="en">has related</RoleExpression>
+		<RoleExpressionOpposite xml:lang="en">has related</RoleExpressionOpposite>
+		<Definition xml:lang="en" source="https://www.w3.org/TR/skos-reference/#semantic-relations">Concept1 is related to Concept2 (and vice versa)</Definition>
+		<Identifier type="URL">http://www.w3.org/2004/02/skos/core#related</Identifier>
+	</Class>
+
+</ClassScheme>
