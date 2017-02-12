@@ -737,6 +737,9 @@
 
 <!-- 
 	<xs:element name="" substitutionGroup="Individual__SubstitutionGroupHead" cflink:entity="">
+		<xs:annotation>
+			<xs:documentation></xs:documentation>
+		</xs:annotation>
 		<xs:complexType>
 			<xs:complexContent>
 				<xs:extension base="cfIdAttr__BaseType">
@@ -748,6 +751,216 @@
 		</xs:complexType>
 	</xs:element>
 -->
+
+	<!-- the CERIF Semantic Layer -->
+
+	<xs:element name="SemanticLayer__SubstitutionGroupHead" type="SemanticLayer__BaseType" abstract="true">
+		<xs:annotation>
+			<xs:documentation>Semantic layer: classification schemes and classifications</xs:documentation>
+		</xs:annotation>
+	</xs:element>
+	<xs:complexType name="SemanticLayer__BaseType">
+		<xs:annotation>
+			<xs:documentation>A common supertype for semantic layer objects: classification schemes and classifications</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="cfIdAttr__BaseType"/>
+		</xs:complexContent>
+	</xs:complexType>
+
+	<xs:element name="ClassScheme" substitutionGroup="SemanticLayer__SubstitutionGroupHead" cflink:link="cfClass">
+		<xs:annotation>
+			<xs:documentation>A classification scheme: a collection of concepts, categories, or notions</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="SemanticLayer__BaseType">
+					<xs:sequence>
+
+						<xs:element name="Name" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassSchemeName.cfName">
+							<xs:annotation>
+								<xs:documentation>The name of the classification scheme</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Description" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassSchemeDescr.cfDescr">
+							<xs:annotation>
+								<xs:documentation>The description of the classification scheme</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#">
+							<xs:annotation>
+								<xs:documentation>An identifier of the classification scheme</xs:documentation>
+							</xs:annotation>
+						</xs:element>						
+
+						<xs:element name="Class" type="cfClass__BaseType" minOccurs="0" maxOccurs="unbounded">
+							<xs:annotation>
+								<xs:documentation>A classification: a single concept, category, or notion that belongs in the enclosing classification scheme</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="Link" minOccurs="0" maxOccurs="unbounded" cflink:link="cfClass_Class cfClassScheme_Class">
+							<xs:annotation>
+								<xs:documentation>A general link from a classification scheme to another classification scheme or a classification</xs:documentation>
+							</xs:annotation>
+							<xs:complexType>
+								<xs:complexContent>
+									<xs:extension base="cfLink__BaseType">
+										<xs:sequence>
+											<xs:element ref="SemanticLayer__SubstitutionGroupHead"/>
+										</xs:sequence>
+									</xs:extension>
+								</xs:complexContent>
+							</xs:complexType>
+						</xs:element>
+
+					</xs:sequence>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:element name="Class" substitutionGroup="SemanticLayer__SubstitutionGroupHead" cflink:entity="cfClass">
+		<xs:annotation>
+			<xs:documentation>A classification: a single concept, category, or notion</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:complexContent>
+				<xs:extension base="cfClass__BaseType">
+					<xs:attribute name="classSchemeId" type="xs:string" use="optional">
+						<xs:annotation>
+							<xs:documentation>The classification scheme this classification belongs into</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:complexContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="cfClass__BaseType">
+		<xs:annotation>
+			<xs:documentation>The base type for a CERIF classification</xs:documentation>
+		</xs:annotation>
+		<xs:complexContent>
+			<xs:extension base="SemanticLayer__BaseType">
+				<xs:sequence>
+
+					<xs:element name="Term" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassTerm.cfTerm">
+						<xs:annotation>
+							<xs:documentation>The term for the classification</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+					
+					<xs:sequence minOccurs="0">
+						<xs:annotation>
+							<xs:documentation>Role expressions: used in case it represents a relationship type in a binary relationship between two CERIF objects</xs:documentation>
+						</xs:annotation>
+
+						<xs:element name="RoleExpression" type="cfMLangString__Type" maxOccurs="unbounded" cflink:attribute="cfClassRoleExpr.cfRoleExpr">
+							<xs:annotation>
+								<xs:documentation>The role expression for the classification (used in case it represents a relationship type in a binary relationship)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+						<xs:element name="RoleExpressionOpposite" type="cfMLangString__Type" maxOccurs="unbounded" cflink:attribute="cfClassRoleExpr.cfRoleExprOpp">
+							<xs:annotation>
+								<xs:documentation>The inverse role expression for the classification (used in case it represents a relationship type in a binary relationship)</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
+					</xs:sequence>
+
+					<xs:element name="Definition" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassDef.cfDef">
+						<xs:annotation>
+							<xs:documentation>The definition of the classification</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+
+					<xs:element name="Description" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassDescr.cfDescr">
+						<xs:annotation>
+							<xs:documentation>The description of the classification</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+
+					<xs:element name="Example" type="cfMLangStringWithOptionalSource__Type" minOccurs="0" maxOccurs="unbounded" cflink:attribute="cfClassEx.cfEx">
+						<xs:annotation>
+							<xs:documentation>Example(s) of the classification</xs:documentation>
+						</xs:annotation>
+					</xs:element>
+
+					<xs:element name="Identifier" type="cfGenericIdentifier__Type" minOccurs="0" maxOccurs="unbounded" cflink:identifier="true" cfprocess:expandBy="http://eurocris.org/cerif/vocab/IdentifierTypes#">
+						<xs:annotation>
+							<xs:documentation>An identifier of the classification</xs:documentation>
+						</xs:annotation>
+					</xs:element>						
+					
+					<xs:element name="Broader" minOccurs="0" maxOccurs="unbounded" cflink:link="cfClass_Class(http://www.w3.org/2004/02/skos/core#broader)">
+						<xs:annotation>
+							<xs:documentation>Points at a concept that is more general in meaning than the present one: equivalent to the SKOS <code>skos:broader</code> semantic relation</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="cfLink__BaseType">
+									<xs:sequence>
+										<xs:element ref="Class"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="Narrower" minOccurs="0" maxOccurs="unbounded" cflink:link="cfClass_Class(http://www.w3.org/2004/02/skos/core#broader)">
+						<xs:annotation>
+							<xs:documentation>Points at a broader concept than the present one: equivalent to the SKOS <code>skos:narrower</code> semantic relation which is the inverse of <code>skos:broader</code></xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="cfLink__BaseType">
+									<xs:sequence>
+										<xs:element ref="Class"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="Related" minOccurs="0" maxOccurs="unbounded" cflink:link="cfClass_Class(http://www.w3.org/2004/02/skos/core#related)">
+						<xs:annotation>
+							<xs:documentation>Points at a related concept: equivalent to the SKOS <code>skos:related</code> semantic relation</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="cfLink__BaseType">
+									<xs:sequence>
+										<xs:element ref="Class"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+
+					<xs:element name="Link" minOccurs="0" maxOccurs="unbounded" cflink:link="cfClass_Class cfClassScheme_Class">
+						<xs:annotation>
+							<xs:documentation>A general link from a classification to another classification or a classification scheme</xs:documentation>
+						</xs:annotation>
+						<xs:complexType>
+							<xs:complexContent>
+								<xs:extension base="cfLink__BaseType">
+									<xs:sequence>
+										<xs:element ref="SemanticLayer__SubstitutionGroupHead"/>
+									</xs:sequence>
+								</xs:extension>
+							</xs:complexContent>
+						</xs:complexType>
+					</xs:element>
+
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+
 
 	<!-- common building blocks -->
 
@@ -785,6 +998,14 @@
 				<xs:attribute ref="xml:lang" use="required" />
 				<xs:attribute name="trans" type="cfTrans__Type" use="optional" default="o" />
 				<xs:anyAttribute namespace="##other"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	<xs:complexType name="cfMLangStringWithOptionalSource__Type">
+		<xs:simpleContent>
+			<xs:extension base="cfMLangString__Type">
+				<xs:attribute name="source" type="xs:string" use="optional" />
 			</xs:extension>
 		</xs:simpleContent>
 	</xs:complexType>
