@@ -91,7 +91,7 @@
       <Costs>
          <Cost>
             <Funding>
-               <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
+               <Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
                <Name xml:lang="en">The costs of the project "Simulation of slow dynamics in polymer melts" covered by the funding from NWO</Name>
                <!-- <Amount currency="eur"></Amount>  No amounts availble for rounds, nor projects in db -->
                <CoveredBy>
@@ -99,7 +99,7 @@
                </CoveredBy>
                <ApplicationWithin>
                   <Funding id="OND1360639"><!-- Isaac subsidierondeID id isaac:2274 -->
-                     <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
+                     <Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
                      <!-- No Id's allowed: However, this might be an existing fundingprogram with multiple grants?
                      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360639</Identifier>
                      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">2274</Identifier>

@@ -21,6 +21,12 @@
 		</xs:annotation>
 	</xs:import>
 	
+	<xs:import namespace="urn:xmlns:nl:pop-project:vocab:FundingTypes#" schemaLocation="./funding-types.xsd">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">The funding types for the P-O-P profile</xs:documentation>
+		</xs:annotation>
+	</xs:import>
+	
 	<xs:element name="FundingAwardNotice">
 		<xs:complexType>
 			<xs:sequence>
@@ -409,6 +415,12 @@
 				<xs:extension base="cfIdAttr__BaseType">
 					<xs:sequence>
 						
+						<xs:element ref="Type" xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#" minOccurs="0">
+							<xs:annotation>
+								<xs:documentation>The type of the funding</xs:documentation>
+							</xs:annotation>
+						</xs:element>
+
 						<xs:element name="Type" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfFund_Class" cfprocess:expandBy="Classification(Type)">
 							<xs:annotation>
 								<xs:documentation>The type of the funding</xs:documentation>

@@ -123,14 +123,14 @@
       <Costs>
          <Cost>
             <Funding id="d3566767-6192-470e-b456-b99879d18aa3">
-               <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
+               <Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
                <Name xml:lang="en">The costs of the project "The end of membership as we know it? Organized sports and sustainable social ties" covered by the funding from NWO</Name>
                <CoveredBy>
                   <OrgUnit id="d3"/>
                </CoveredBy>
                <ApplicationWithin>
                   <Funding id="2491">
-                     <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
+                     <Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
                      <Acronym>SPORT 2012 GW</Acronym>
                      <Name xml:lang="en">Sport: Participation/SPORT 2012 GW</Name>
                      <CoveredBy>

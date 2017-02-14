@@ -135,14 +135,14 @@
 		<Costs><!-- Note: fictitious amounts in a real structure -->
 			<Cost>
 				<Funding id="19fd6539-a316-46aa-9674-f7660765bb48">
-					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectTotalEligibleCosts</Type>
+					<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectTotalEligibleCosts</Type>
 					<Name xml:lang="en">Total eligible costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia"</Name>
 					<Amount currency="EUR">12</Amount>
 				</Funding>
 			</Cost>
 			<Cost>
 				<Funding id="c50c374d-2a90-47ad-b3d2-907db89ec0cf">
-					<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">ProjectCostsCoveredByFunder</Type>
+					<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
 					<Name xml:lang="en">The costs of the project "Televising Locality: Industrial, historical and socio-cultural investigations of local television in post-authoritarian Indonesia" covered by the funding from NWO</Name>
 					<Amount currency="EUR">6</Amount>
 					<CoveredBy>
@@ -152,7 +152,7 @@
 					</CoveredBy>
 					<ApplicationWithin>
 						<Funding id="ec6a793f-ed5e-4270-833f-74f88aa8464d">
-							<Type scheme="http://openaire.eu/cerif/vocab/FundingTypes#">Call</Type>
+							<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
 							<Name xml:lang="en">The 2009 NWO Call for Projects</Name>
 							<CoveredBy>
 								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">

@@ -183,13 +183,13 @@
 		<Costs>
 			<Cost>
 				<Funding id="d08f304d-1498-4ad5-a1e1-033547dbf058">
-					<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes">ProjectTotalEligibleCosts</Type>
+					<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectTotalEligibleCosts</Type>
 					<Name xml:lang="en">Total eligible costs of the project "Parables and the Partings of the Ways"</Name>
 				</Funding>
 			</Cost>
 			<Cost>
 				<Funding id="ad5866e0-521b-4771-9fd5-008a662ee665">
-					<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
+					<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
 					<Name xml:lang="en">The costs of the project "Parables and the Partings of the Ways" covered by the funding from NWO</Name>
 					<Amount currency="EUR">6</Amount>
 					<CoveredBy>
@@ -199,7 +199,7 @@
 					</CoveredBy>
 					<ApplicationWithin>
 						<Funding id="a2f9b5ef-f231-45f5-97f8-c53bcdc00dfe">
-							<Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
+							<Type xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
 							<Name xml:lang="en">Free Competition/Free Competition GW VC 2013 GW</Name>
 							<CoveredBy>
 								<OrgUnit id="87a63334-0943-4669-a3a4-151826c45c97">
