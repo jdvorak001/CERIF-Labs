@@ -21,6 +21,7 @@
       </xs:annotation>
       <xs:simpleType>
          <xs:restriction base="xs:string">
+         
             <xs:enumeration value="Call">
                <xs:annotation>
                   <xs:documentation xml:lang="en">A call for project proposals by a funder</xs:documentation>
@@ -37,6 +38,7 @@
                   </xs:appinfo>
                </xs:annotation>
             </xs:enumeration>
+            
             <xs:enumeration value="ProjectCostsCoveredByFunder">
                <xs:annotation>
                   <xs:documentation xml:lang="en">The costs of the project that are covered by a funder</xs:documentation>
@@ -53,6 +55,24 @@
                   </xs:appinfo>
                </xs:annotation>
             </xs:enumeration>
+            
+            <xs:enumeration value="ProjectTotalEligibleCosts">
+               <xs:annotation>
+                  <xs:documentation xml:lang="en">The total eligible costs of the project</xs:documentation>
+                  <xs:appinfo>
+                     <CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+		                   date="2017-02-14"
+		                   sourceDatabase=".">
+                        <cfClass>
+                           <cfClassId>c2ffebda-d22f-4e7c-b311-ce1d3213d9e2</cfClassId>
+		                   <cfClassSchemeId>cbadeded-d568-4405-a0ae-36bdaa530704<!-- Types of Funding --></cfClassSchemeId>
+                           <cfTerm cfLangCode="en" cfTrans="o">The total eligible costs of the project</cfTerm>
+                        </cfClass>
+                     </CERIF>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            
          </xs:restriction>
       </xs:simpleType>
    </xs:element>
