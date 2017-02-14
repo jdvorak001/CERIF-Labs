@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FundingAwardNotice xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL"
+                    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                    xsi:schemaLocation="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL https://raw.githubusercontent.com/jdvorak001/CERIF-Labs/master/examples/nl-pop/schemas/p-o-p-profile-schema.xsd">
+   <!-- A project funding award notice based on a real-world project, see http://www.narcis.nl/research/RecordID/OND1359846 -->
+   <Project id="OND1359846"><!-- UU-secretariat -->
+      <Title xml:lang="en">Simulation of slow dynamics in polymer melts</Title>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">14448</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">OND1359846</Identifier>
+      <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1359846</Identifier>
+      <StartDate>2015-10-01</StartDate>
+      <EndDate>2016-10-01</EndDate>
+      <Funders>
+         <Funder>
+            <OrgUnit id="ORG1235000">
+               <Acronym>NWO-EW</Acronym>
+               <Name xml:lang="en">NWO Council for Physical Sciences</Name>
+               <Name xml:lang="nl">NWO Exacte Wetenschappen</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235000</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235000</Identifier>
+               <PartOf>
+                  <OrgUnit id="ORG1236737">
+                     <Acronym>NWO</Acronym>
+                     <Name xml:lang="en">Netherlands Organisation for Scientific Research</Name>
+                     <Name xml:lang="nl">Nederlandse Organisatie voor Wetenschappelijk Onderzoek</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#FundRefId">http://dx.doi.org/10.13039/501100003246</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236737</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236737</Identifier>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Funder>
+      </Funders>
+      <Consortium>
+         <Secretariat>
+            <OrgUnit id="ORG1235807">
+               <Name xml:lang="en">Institute of Theoretical Physics</Name>
+               <Name xml:lang="nl">Instituut voor Theoretische Fysica</Name>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">48987</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1235807</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1235807</Identifier>
+               <PartOf>
+                  <OrgUnit id="ORG1237729">
+                     <Name xml:lang="en">Department of Physics and Astronomy</Name>
+                     <Name xml:lang="nl">Departement Natuur- en Sterrenkunde</Name>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">78068</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1237729</Identifier>                 
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1237729</Identifier>
+                     <PartOf>
+                        <OrgUnit id="ORG1242136">
+                           <Name xml:lang="en">Faculty of Science</Name>
+                           <Name xml:lang="nl">Faculteit Bètawetenschappen</Name>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">51185</Identifier>
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1242136</Identifier>                           
+                           <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1242136</Identifier>
+                           <PartOf>
+                              <OrgUnit id="ORG1236847">
+                                 <Acronym>UU</Acronym>
+                                 <Name xml:lang="en">Utrecht University</Name>
+                                 <Name xml:lang="nl">Universiteit Utrecht</Name>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">15878</Identifier>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">ORG1236847</Identifier>
+                                 <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/organisation/RecordID/ORG1236847</Identifier>
+                              </OrgUnit>
+                           </PartOf>
+                        </OrgUnit>
+                     </PartOf>
+                  </OrgUnit>
+               </PartOf>
+            </OrgUnit>
+         </Secretariat>
+      </Consortium>
+      <Team>
+         <PrincipalInvestigator>
+            <DisplayName>Dr. D. (Deb) Panja</DisplayName>
+            <Person id="PRS1309981">
+               <PersonName>
+                  <FamilyNames>Panja</FamilyNames>
+                  <FirstNames>D. (Deb)</FirstNames>
+               </PersonName>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#narcis">PRS1309981</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/person/RecordID/PRS1309981</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#dai">info:eu-repo/dai/nl/370992105</Identifier>
+               <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">126392</Identifier>               
+            </Person>
+            <Affiliation>
+               <OrgUnit id="ORG1235807"/>
+            </Affiliation>
+         </PrincipalInvestigator>
+      </Team>
+      <Costs>
+         <Cost>
+            <Funding>
+               <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">ProjectCostsCoveredByFunder</Type>
+               <Name xml:lang="en">The costs of the project "Simulation of slow dynamics in polymer melts" covered by the funding from NWO</Name>
+               <!-- <Amount currency="eur"></Amount>  No amounts availble for rounds, nor projects in db -->
+               <CoveredBy>
+                  <OrgUnit id="ORG1235000"/>
+               </CoveredBy>
+               <ApplicationWithin>
+                  <Funding id="OND1360639"><!-- Isaac subsidierondeID id isaac:2274 -->
+                     <Type scheme="urn:xmlns:nl:pop-project:vocab:FundingTypes#">Call</Type>
+                     <!-- No Id's allowed: However, this might be an existing fundingprogram with multiple grants?
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#source-url">http://www.narcis.nl/research/RecordID/OND1360639</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">2274</Identifier>
+                     <Identifier type="urn:xmlns:nl:pop-project:vocab:IdentifierTypes#isaac">OND1360639</Identifier>
+                     -->
+                     <Acronym>Computing Time National Computing Facilities Access to Computing Facilities</Acronym> <!-- Call shortname -->
+                     <Name xml:lang="en">Computing Time National Computing Facilities/Access to Computing Facilities</Name>
+                     <CoveredBy>
+                        <OrgUnit id="ORG1235000"/>
+                     </CoveredBy>
+                  </Funding>
+               </ApplicationWithin>
+            </Funding>
+         </Cost>
+      </Costs>
+      <Abstract xml:lang="en">Dynamics of a polymer melt can be quantitatively understood by analyzing the motion of a single polymer chain in the melt ? commonly referred to as ?tagged chain?. Unlike a single chain in isolation, a tagged chain in a dense polymer system has to interact with the surrounding chains. Beyond the scale of the ?entanglement length? Ne, which is typically at least of order 100 backbone units even for a melt, it is widely recognized that topological constraints dramatically change the relaxation times of melts when the chain length exceeds about 3Ne. Melts of chains of lengths sinificantly smaller than Ne are called unentangled melts, and those of chains of lengths sinificantly larger than Ne are called entangled melts. Despite decades of reserch into both types of melts, many fundamental questions remain unanswered. The primary reason is that the slow dynamics of melts that makes access to reliable data, both in laboratory and in silico experiments, a difficult pursuit. The applicant has recently made quite some progress with in silico experiments on both of these issues, which he wants to build upon. A by-product of this line of research is that the methods developed are very often found useful for other types of polymeric systems, such as semiflexible polymers and polymer networks. The applicant has built a history on research in polymeric systems, which is expected to continue for the coming years.</Abstract>
+   </Project>
+</FundingAwardNotice>
