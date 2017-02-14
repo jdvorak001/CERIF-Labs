@@ -346,19 +346,22 @@
 							</xs:annotation>
 						</xs:element>
 
-						<xs:element minOccurs="0" name="Costs">
+						<xs:element minOccurs="0" name="Costs" cflink:unorderedConteiner="true">
 							<xs:annotation>
 								<xs:documentation>The costs of the project and the funding that covers them</xs:documentation>
 							</xs:annotation>
 							<xs:complexType>
 								<xs:sequence>
-									<xs:element name="Cost" maxOccurs="unbounded" minOccurs="0">
+									<xs:element name="Cost" maxOccurs="unbounded" minOccurs="0" cflink:link="cfProj_Fund">
 										<xs:complexType>
-											<xs:sequence>
-												<xs:element minOccurs="0" name="Amount" type="cfAmount__Type"/>
-												<xs:element ref="Funding"/>
-											</xs:sequence>
-											<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
+											<xs:complexContent>
+												<xs:extension base="cfLink__BaseType">
+													<xs:sequence>
+														<xs:element name="Amount" type="cfAmount__Type" minOccurs="0" cflink:link="cfProj_Fund.cfAmount cfProj_Fund.cfCurrCode"/>
+														<xs:element ref="Funding"/>
+													</xs:sequence>
+												</xs:extension>
+											</xs:complexContent>
 										</xs:complexType>
 									</xs:element>
 								</xs:sequence>
