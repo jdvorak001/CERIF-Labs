@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           elementFormDefault="qualified"
+           targetNamespace="urn:xmlns:nl:pop-project:vocab:FundingTypes#"
+           xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.6-2 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.6/CERIF_1.6_2.xsd">
+   <xs:element name="Type">
+      <xs:annotation>
+         <xs:documentation xml:lang="en">The types of funding used in the P-O-P profile</xs:documentation>
+         <xs:appinfo>
+            <CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+                   date="2017-02-10"
+                   sourceDatabase=".">
+               <cfClassScheme>
+                  <cfClassSchemeId>cbadeded-d568-4405-a0ae-36bdaa530704<!-- Types of Funding --></cfClassSchemeId>
+                  <cfName cfLangCode="en" cfTrans="o">The types of funding used in the P-O-P profile</cfName>
+               </cfClassScheme>
+            </CERIF>
+         </xs:appinfo>
+      </xs:annotation>
+      <xs:simpleType>
+         <xs:restriction base="xs:string">
+            <xs:enumeration value="Call">
+               <xs:annotation>
+                  <xs:documentation xml:lang="en">A call for project proposals by a funder</xs:documentation>
+                  <xs:appinfo>
+                     <CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+		                   date="2017-02-10"
+		                   sourceDatabase=".">
+                        <cfClass>
+                           <cfClassId>2de1e60c-6e96-4e08-88dd-2c920884c4dd</cfClassId>
+		                   <cfClassSchemeId>cbadeded-d568-4405-a0ae-36bdaa530704<!-- Types of Funding --></cfClassSchemeId>
+                           <cfTerm cfLangCode="en" cfTrans="o">A call for project proposals by a funder</cfTerm>
+                        </cfClass>
+                     </CERIF>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+            <xs:enumeration value="ProjectCostsCoveredByFunder">
+               <xs:annotation>
+                  <xs:documentation xml:lang="en">The costs of the project that are covered by a funder</xs:documentation>
+                  <xs:appinfo>
+                     <CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2"
+		                   date="2017-02-10"
+		                   sourceDatabase=".">
+                        <cfClass>
+                           <cfClassId>1b6528c7-64e6-499f-b6ac-87859743c793</cfClassId>
+		                   <cfClassSchemeId>cbadeded-d568-4405-a0ae-36bdaa530704<!-- Types of Funding --></cfClassSchemeId>
+                           <cfTerm cfLangCode="en" cfTrans="o">The costs of the project that are covered by a funder</cfTerm>
+                        </cfClass>
+                     </CERIF>
+                  </xs:appinfo>
+               </xs:annotation>
+            </xs:enumeration>
+         </xs:restriction>
+      </xs:simpleType>
+   </xs:element>
+</xs:schema>
