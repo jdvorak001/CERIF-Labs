@@ -17,7 +17,10 @@
 	<target name="validate">
 		<schemavalidate failonerror="true" fullchecking="true" warn="true">
 			<schema namespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" file="schemas/p-o-p-profile-schema.xsd" />
+			<schema namespace="http://www.w3.org/2001/XMLSchema" file="schemas/XMLSchema.xsd" />
+			<schema namespace="http://eurocris.org/cerif/annotations#" file="../../annotations.xsd" />
 			<fileset dir="." includes="sample*.xml" />
+			<fileset dir="schemas" includes="p-o-p-profile-schema.xsd"/>
 		</schemavalidate>
 	</target>
 
