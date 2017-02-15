@@ -35,9 +35,17 @@ Typically this means that:
 
 The [POP profile schema](./schemas/p-o-p-profile-schema.xsd) defines the `FundingAwardNotice` element in the `urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL` namespace.
 That element shall be used as the top element of the funding award notices.
-(It can be a root element in stand-alone POP CERIF documents, or it can be embedded in an OAI-PMH response.)
+It can be a root element in stand-alone POP CERIF documents, or it can be embedded in a communication protocol (think of an OAI-PMH response).
 
 The syntax of the file shall be easy to understand from the schema and the examples provided.
+The following diagram should give you an overview:
+
+![Diagram](./schemas/p-o-p-profile.png)
+
+You will see the different CERIF entities. OrgUnits are in fact used in three different contexts here:
+* as the funding agency,
+* as the consortium member,
+* as an orgunit a project team member is affiliated with.
 
 ## Examples
 
