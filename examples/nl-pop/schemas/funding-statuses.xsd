@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns="urn:xmlns:nl:pop-project:vocab:FundingStatuses#" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" elementFormDefault="qualified"
+	targetNamespace="urn:xmlns:nl:pop-project:vocab:FundingStatuses#" xsi:schemaLocation="urn:xmlns:org:eurocris:cerif-1.6-2 http://www.eurocris.org/Uploads/Web%20pages/CERIF-1.6/CERIF_1.6_2.xsd">
+	<xs:element name="Status">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">The statuses of funding used in the P-O-P profile</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="Status__EnumeratedSimpleType">
+					<xs:attribute name="startDate" type="xs:date" use="optional">
+						<xs:annotation>
+							<xs:documentation>The date when the status started to apply. If not given, an implicit value of "since time immemorial" is implied.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+					<xs:attribute name="endDate" type="xs:date" use="optional">
+						<xs:annotation>
+							<xs:documentation>The date of the last day the status applied continuously from startDate. If not given, an implicit value of "until things change" is implied.</xs:documentation>
+						</xs:annotation>
+					</xs:attribute>
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:simpleType name="Status__EnumeratedSimpleType">
+		<xs:annotation>
+			<xs:appinfo>
+				<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2" date="2017-02-10" sourceDatabase=".">
+					<cfClassScheme>
+						<cfClassSchemeId>49b37494-5c54-419b-87e4-89531c1f44b2<!-- Statuses of Funding --></cfClassSchemeId>
+						<cfName cfLangCode="en" cfTrans="o">The statuses of funding used in the P-O-P profile</cfName>
+					</cfClassScheme>
+				</CERIF>
+			</xs:appinfo>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+
+			<xs:enumeration value="Awarded">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Funding awarded by the funder</xs:documentation>
+					<xs:appinfo>
+						<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2" date="2017-02-10" sourceDatabase=".">
+							<cfClass>
+								<cfClassId>73ae9e5c-76f5-4d11-9576-48e643cff6fd</cfClassId>
+								<cfClassSchemeId>49b37494-5c54-419b-87e4-89531c1f44b2<!-- Statuses of Funding --></cfClassSchemeId>
+								<cfTerm cfLangCode="en" cfTrans="o">Funding awarded by the funder</cfTerm>
+							</cfClass>
+						</CERIF>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="AppliedFor">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Funding applied for at the funder</xs:documentation>
+					<xs:appinfo>
+						<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2" date="2017-02-10" sourceDatabase=".">
+							<cfClass>
+								<cfClassId>8f9088ba-fd2d-4bbf-be33-398db500fcc8</cfClassId>
+								<cfClassSchemeId>49b37494-5c54-419b-87e4-89531c1f44b2<!-- Statuses of Funding --></cfClassSchemeId>
+								<cfTerm cfLangCode="en" cfTrans="o">Funding applied for at the funder</cfTerm>
+							</cfClass>
+						</CERIF>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+
+			<xs:enumeration value="Revoked">
+				<xs:annotation>
+					<xs:documentation xml:lang="en">Funding revoked by the funder</xs:documentation>
+					<xs:appinfo>
+						<CERIF xmlns="urn:xmlns:org:eurocris:cerif-1.6-2" date="2017-02-10" sourceDatabase=".">
+							<cfClass>
+								<cfClassId>54d8ca11-fd87-4e58-beb1-64a5209bc3ad</cfClassId>
+								<cfClassSchemeId>49b37494-5c54-419b-87e4-89531c1f44b2<!-- Statuses of Funding --></cfClassSchemeId>
+								<cfTerm cfLangCode="en" cfTrans="o">Funding revoked by the funder</cfTerm>
+							</cfClass>
+						</CERIF>
+					</xs:appinfo>
+				</xs:annotation>
+			</xs:enumeration>
+
+		</xs:restriction>
+	</xs:simpleType>
+
+</xs:schema>

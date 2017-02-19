@@ -27,6 +27,12 @@
 		</xs:annotation>
 	</xs:import>
 	
+	<xs:import namespace="urn:xmlns:nl:pop-project:vocab:FundingStatuses#" schemaLocation="./funding-statuses.xsd">
+		<xs:annotation>
+			<xs:documentation xml:lang="en">The statuses of funding for the P-O-P profile</xs:documentation>
+		</xs:annotation>
+	</xs:import>
+	
 	<xs:element name="FundingAwardNotice">
 		<xs:complexType>
 			<xs:sequence>
@@ -473,6 +479,12 @@
 								</xs:sequence>
 								<xs:attributeGroup ref="cfStartDateEndDate__AttributeGroup"/>
 							</xs:complexType>
+						</xs:element>
+
+						<xs:element ref="Status" xmlns="urn:xmlns:nl:pop-project:vocab:FundingStatuses#" minOccurs="0" maxOccurs="unbounded" cflink:link="cfFund_Class">
+							<xs:annotation>
+								<xs:documentation>The status of the funding</xs:documentation>
+							</xs:annotation>
 						</xs:element>
 
 						<xs:group ref="__TheRestGroup"/>
