@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:cflink="http://eurocris.org/cerif/annotations#" xmlns:cfprocess="http://eurocris.org/cerif/preprocessing#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
 	xsi:schemaLocation="http://www.w3.org/2001/XMLSchema https://www.w3.org/2012/04/XMLSchema.xsd http://eurocris.org/cerif/annotations# http://eurocris.org/cerif/xml/schemas/annotations.xsd"
-	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL">
+	elementFormDefault="qualified" attributeFormDefault="unqualified" xml:lang="en" targetNamespace="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" xmlns="urn:xmlns:nl:pop-project:cerif-profile-1.0-EXPERIMENTAL" jxb:version="1.0">
 
 	<xs:annotation>
 		<xs:documentation>This is the XML Schema for CERIF (Common European Research Information Format) profile for the P-O-P project in the Netherlands.
@@ -344,6 +344,9 @@
 						<xs:element ref="Subject" xmlns="urn:xmlns:nl:pop-project:vocab:Subjects#" minOccurs="0" maxOccurs="unbounded">
 							<xs:annotation>
 								<xs:documentation>The subject classification(s) of the project</xs:documentation>
+								<xs:appinfo>
+									<jxb:property name="narcisSubject"/>
+								</xs:appinfo>
 							</xs:annotation>
 						</xs:element>
 						<xs:element name="Subject" type="cfGenericClassification__Type" minOccurs="0" maxOccurs="unbounded" cflink:link="cfProj_Class" cfprocess:expandBy="Classification(Subject)">
@@ -424,6 +427,9 @@
 						<xs:element ref="Type" xmlns="urn:xmlns:nl:pop-project:vocab:FundingTypes#" minOccurs="0">
 							<xs:annotation>
 								<xs:documentation>The type of the funding</xs:documentation>
+								<xs:appinfo source="JAXB">
+									<jxb:property name="popFundingType"/>
+								</xs:appinfo>
 							</xs:annotation>
 						</xs:element>
 
